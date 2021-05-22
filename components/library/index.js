@@ -1,6 +1,7 @@
 import React from "react";
 import Box from "./Box";
 import Button from "./Button";
+import Reveal from "./Reveal";
 
 const Typography = (props) => {
   return (
@@ -34,4 +35,4 @@ const Container = (props) => {
   );
 };
 
-export { Box, Typography, Button, Flex, Container, Image };
+export { Box, Typography, Button, Flex, Container, Image, Reveal };

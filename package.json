@@ -13,10 +13,12 @@
     "@emotion/styled": "^11.3.0",
     "axios": "^0.21.1",
     "babel-plugin-module-resolver": "^4.1.0",
+    "framer-motion": "^4.1.17",
     "next": "10.2.0",
     "react": "17.0.2",
     "react-dom": "17.0.2",
     "react-hook-form": "^7.6.2",
+    "react-intersection-observer": "^8.32.0",
     "styled-system": "^5.1.5"
   },
   "devDependencies": {
