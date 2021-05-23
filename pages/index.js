@@ -1,4 +1,4 @@
-import { Flex, Reveal, Typography } from "components/library";
+import { Flex, Image, Reveal, Typography } from "components/library";
 import Layout from "components/Layout";
 
 export default function Home() {
@@ -12,10 +12,12 @@ export default function Home() {
         width="100%"
         height="100%"
       >
+        <Reveal mr="1rem" bg="white" left offset="2000">
+          <Image height="100px" width="100px" src="/svg/only_logo.svg" />
+        </Reveal>
         <Typography as="h1" fontWeight="400" fontSize="5rem">
-          Happy Coding!
+          The Internet Folks
         </Typography>
-        <Reveal left offset="2000" height="5rem" width="5rem" bg="#fff" />
       </Flex>
     </Layout>
   );
