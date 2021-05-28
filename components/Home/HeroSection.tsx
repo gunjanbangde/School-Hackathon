@@ -1,8 +1,5 @@
 import React from "react";
-import Lottie from "react-lottie";
-import { Box, Flex, Text, Img, Container, Button } from "@chakra-ui/react";
-
-import animationData from "@/public/svg/svg1.js";
+import { Box, Flex, Text, Container, Button } from "@chakra-ui/react";
 
 const HeroSection: React.FC = () => {
   //   const lottieOptions = {

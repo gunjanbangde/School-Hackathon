@@ -1,5 +1,4 @@
 import React from "react";
-import Lottie from "react-lottie";
 import {
   Box,
   Flex,
@@ -11,8 +10,6 @@ import {
   ListItem,
   ListIcon,
 } from "@chakra-ui/react";
-
-import animationData from "@/public/svg/svg1.js";
 
 const OurOffering: React.FC = () => {
   //   const lottieOptions = {

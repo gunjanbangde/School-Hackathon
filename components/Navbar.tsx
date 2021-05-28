@@ -1,5 +1,5 @@
 import React from "react";
-import { Box, Flex, Text, Container, Button, Img } from "@chakra-ui/react";
+import { Box, Flex, Container, Button, Img } from "@chakra-ui/react";
 
 const Navbar: React.FC = () => {
   return (
