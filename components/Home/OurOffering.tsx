@@ -10,41 +10,34 @@ import {
   ListItem,
   ListIcon,
 } from "@chakra-ui/react";
+import Reveal from "../library/Reveal";
 
 const OurOffering: React.FC = () => {
-  //   const lottieOptions = {
-  //     loop: true,
-  //     autoplay: true,
-  //     animationData,
-  //     rendererSettings: {
-  //       preserveAspectRatio: "xMidYMid slice",
-  //     },
-  //   };
   return (
     <Box width="100vw" p="120px 0" bg="#ebf4ff">
       <Container maxWidth="1200px">
         <Flex>
-          <Box width="50%">
-            {/* <Lottie options={lottieOptions} height="100%" width="100%" /> */}
-          </Box>
+          <Box width="50%"></Box>
           <Box ml="8.3%" width="50%">
-            <Text color="#444" fontWeight="500" mb="1rem">
-              OUR OFFERINGS
-            </Text>
-            <Text
-              as="h1"
-              mb="2rem"
-              fontSize="5xl"
-              fontWeight="700"
-              color="textBlack"
-              lineHeight="61px"
-            >
-              Build your dream project faster
-            </Text>
-            <Text mb="1rem" color="textGray">
-              5+ years of executing the following on various tech stack:
-            </Text>
-            <Box mt="3rem">
+            <Reveal right>
+              <Text color="#444" fontWeight="500" mb="1rem">
+                OUR OFFERINGS
+              </Text>
+              <Text
+                as="h1"
+                mb="2rem"
+                fontSize="5xl"
+                fontWeight="700"
+                color="textBlack"
+                lineHeight="61px"
+              >
+                Build your dream project faster
+              </Text>
+              <Text mb="1rem" color="textGray">
+                5+ years of executing the following on various tech stack:
+              </Text>
+            </Reveal>
+            <Reveal delay={0.4} right mt="3rem">
               <List>
                 <ListItem mb="20px" color="textBlack">
                   <ListIcon
@@ -83,18 +76,20 @@ const OurOffering: React.FC = () => {
                   Web SDK Development
                 </ListItem>
               </List>
-              <Button
-                borderRadius="3px"
-                bg="textBlack"
-                color="white"
-                p="0 35px"
-                mt="3rem"
-                height="54px"
-                fontWeight="500"
-              >
-                Schedule a Call
-              </Button>
-            </Box>
+              <Reveal delay={0.5} right>
+                <Button
+                  borderRadius="3px"
+                  bg="textBlack"
+                  color="white"
+                  p="0 35px"
+                  mt="3rem"
+                  height="54px"
+                  fontWeight="500"
+                >
+                  Schedule a Call
+                </Button>
+              </Reveal>
+            </Reveal>
           </Box>
         </Flex>
       </Container>

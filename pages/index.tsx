@@ -1,6 +1,4 @@
 import React from "react";
-import Reveal from "components/library/Reveal";
-import { Box, Text, Image } from "@chakra-ui/react";
 
 import Layout from "components/Layout";
 import HeroSection from "@/components/Home/HeroSection";

@@ -3,9 +3,22 @@ import { Box, Flex, Container, Button, Img } from "@chakra-ui/react";
 
 const Navbar: React.FC = () => {
   return (
-    <Box height="74px" px="100px">
-      <Container height="100%" maxWidth="1200px">
-        <Flex height="100%" alignItems="center" justifyContent="space-between">
+    <Box
+      position="fixed"
+      bg="white"
+      top="0"
+      left="0"
+      width="100%"
+      height="74px"
+      px="100px"
+    >
+      <Container maxWidth="none" height="100%" width="100%">
+        <Flex
+          width="100%"
+          height="100%"
+          alignItems="center"
+          justifyContent="space-between"
+        >
           <Img src="/images/logo.svg" height="48px" />
           <Button
             borderRadius="3px"

@@ -1,12 +1,13 @@
 import React from "react";
 import { Box, Flex, Text, Img, Container } from "@chakra-ui/react";
+import Reveal from "../library/Reveal";
 
 const WhatWeDo: React.FC = () => {
   return (
     <Box width="100vw" pt="120px">
       <Container maxWidth="1200px">
         <Flex>
-          <Box width="41%">
+          <Reveal left width="41%">
             <Text color="#444" fontWeight="500" mb="1rem">
               WHAT WE DO
             </Text>
@@ -19,14 +20,16 @@ const WhatWeDo: React.FC = () => {
             >
               Your team's extended arm to accomplish more in less time
             </Text>
-          </Box>
+          </Reveal>
           <Box pb="120px" ml="8.3%" width="50%">
-            <Text px="1rem" color="textGray">
-              Our clients are SaaS teams, Web Design Agencies and Individuals
-              who have researched their project and usually have well-documented
-              requirements.
-            </Text>
-            <Flex flexWrap="wrap" width="100%">
+            <Reveal right>
+              <Text px="1rem" color="textGray">
+                Our clients are SaaS teams, Web Design Agencies and Individuals
+                who have researched their project and usually have
+                well-documented requirements.
+              </Text>
+            </Reveal>
+            <Reveal delay={0.5} d="flex" flexWrap="wrap" width="100%">
               <Box mt="1.4rem" px="1rem" width="50%">
                 <Img src="/images/icon/2.png" />
                 <Text py="1.5rem" fontSize="1.5rem" fontWeight="700">
@@ -67,7 +70,7 @@ const WhatWeDo: React.FC = () => {
                   mile required to delight your customers
                 </Text>
               </Box>
-            </Flex>
+            </Reveal>
           </Box>
         </Flex>
       </Container>

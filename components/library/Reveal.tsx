@@ -3,7 +3,6 @@ import { Box } from "@chakra-ui/react";
 import { useInView } from "react-intersection-observer";
 import { motion, useAnimation } from "framer-motion";
 
-
 interface Props {
   offset?: number;
   left?: boolean;
@@ -11,10 +10,10 @@ interface Props {
   delay?: number;
   children?: ReactNode | string;
   marginRight?: string;
-  [x: string]: any
+  [x: string]: any;
 }
 
-const Reveal: React.FC = (props: Props) => {
+const Reveal: React.FC<Props> = (props) => {
   const animationVariants = {
     visible: { opacity: 1, y: 0, x: 0 },
     bottom: { opacity: 0, y: props.offset || 60 },
@@ -30,7 +29,7 @@ const Reveal: React.FC = (props: Props) => {
     }
   }, [controls, inView]);
   return (
-    <Box
+    <MotionBox
       as={motion.div}
       ref={ref}
       animate={controls}
@@ -40,8 +39,10 @@ const Reveal: React.FC = (props: Props) => {
       {...props}
     >
       {props.children}
-    </Box>
+    </MotionBox>
   );
 };
 
 export default Reveal;
+
+const MotionBox = motion(Box);

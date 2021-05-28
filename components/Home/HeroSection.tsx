@@ -1,5 +1,6 @@
 import React from "react";
 import { Box, Flex, Text, Container, Button } from "@chakra-ui/react";
+import Reveal from "../library/Reveal";
 
 const HeroSection: React.FC = () => {
   //   const lottieOptions = {
@@ -14,28 +15,29 @@ const HeroSection: React.FC = () => {
     <Box
       height="100vh"
       width="100vw"
-      mt="74px"
       p="180px 0 130px"
       bg="url(/images/clipart/4.png) no-repeat right bottom/60.5%"
     >
       <Container maxWidth="1200px">
         <Flex>
           <Box width="41%">
-            <Text
-              as="h1"
-              mb="3rem"
-              fontSize="5xl"
-              fontWeight="700"
-              color="textBlack"
-              lineHeight="61px"
-            >
-              Dedicated team to build your SaaS project <em>faster</em>
-            </Text>
-            <Text mb="1rem" color="textGray">
-              A team of experienced folks who understand the nuances of building
-              modern internet products
-            </Text>
-            <Flex mt="3rem">
+            <Reveal left>
+              <Text
+                as="h1"
+                mb="3rem"
+                fontSize="5xl"
+                fontWeight="700"
+                color="textBlack"
+                lineHeight="61px"
+              >
+                Dedicated team to build your SaaS project <em>faster</em>
+              </Text>
+              <Text mb="1rem" color="textGray">
+                A team of experienced folks who understand the nuances of
+                building modern internet products
+              </Text>
+            </Reveal>
+            <Reveal d="flex" delay={0.4} mt="3rem">
               <Button
                 borderRadius="3px"
                 bg="textBlack"
@@ -46,7 +48,7 @@ const HeroSection: React.FC = () => {
               >
                 Schedule a Call
               </Button>
-            </Flex>
+            </Reveal>
           </Box>
           <Box width="58%">
             {/* <Lottie options={lottieOptions} height="100%" width="100%" /> */}
