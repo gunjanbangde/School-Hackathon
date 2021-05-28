@@ -1,10 +1,20 @@
-import React, { useEffect } from "react";
-import Box from "./Box";
-import { css } from "@emotion/react";
+import React, { ReactNode, useEffect } from "react";
+import { Box } from "@chakra-ui/react";
 import { useInView } from "react-intersection-observer";
 import { motion, useAnimation } from "framer-motion";
 
-const Reveal = (props) => {
+
+interface Props {
+  offset?: number;
+  left?: boolean;
+  right?: boolean;
+  delay?: number;
+  children?: ReactNode | string;
+  marginRight?: string;
+  [x: string]: any
+}
+
+const Reveal: React.FC = (props: Props) => {
   const animationVariants = {
     visible: { opacity: 1, y: 0, x: 0 },
     bottom: { opacity: 0, y: props.offset || 60 },

@@ -2,27 +2,44 @@ import { useState, useEffect } from "react";
 import axios from "lib/http";
 import { toast } from "react-toastify";
 
+interface Props {
+  url: string;
+  method?:
+    | "get"
+    | "GET"
+    | "delete"
+    | "DELETE"
+    | "post"
+    | "POST"
+    | "put"
+    | "PUT"
+    | "patch"
+    | "PATCH";
+  manual?: boolean;
+  showToast?: boolean;
+  toastMessage?: string;
+}
+
 const useAxios = ({
   url,
   method = "get",
   manual = false,
   showToast = false,
   toastMessage = "",
-}) => {
-  const [response, setResponse] = useState(null);
-  const [error, setError] = useState(null);
-  const [isLoading, setIsLoading] = useState(false);
-  const errorToast = (message) =>
+}: Props) => {
+  const [response, setResponse] = useState<string | null>(null);
+  const [error, setError] = useState<string | null>(null);
+  const [isLoading, setIsLoading] = useState<boolean>(false);
+  const errorToast = (message: string) =>
     toast(message, {
       className: "toast-container toast-container--error",
       bodyClassName: "toast-body",
       hideProgressBar: true,
-      autoClose: false,
       position: "top-center",
       autoClose: 10000,
     });
 
-  const successToast = (message) =>
+  const successToast = (message: string) =>
     toast(message, {
       className: "toast-container toast-container--success",
       bodyClassName: "toast-body",
@@ -64,15 +81,15 @@ const useAxios = ({
     const { data, params, options, slug } = args;
     axios({
       url: slug ? `${url}/${slug}` : url,
-      method: method,
-      params: params,
-      data: data,
+      method,
+      params,
+      data,
       ...options,
     })
-      .then((response) => {
-        if (response?.data?.status === "SUCCESS") {
-          if (response?.data?.data) {
-            setResponse(response?.data?.data);
+      .then((res) => {
+        if (res?.data?.status === "SUCCESS") {
+          if (res?.data?.data) {
+            setResponse(res?.data?.data);
           } else {
             setResponse("SUCCESS");
           }
