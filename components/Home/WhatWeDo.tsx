@@ -4,10 +4,10 @@ import Reveal from "../library/Reveal";
 
 const WhatWeDo: React.FC = () => {
   return (
-    <Box width="100vw" pt="120px">
+    <Box pt="120px">
       <Container maxWidth="1200px">
-        <Flex>
-          <Reveal left width="41%">
+        <Flex flexDirection={{ xs: "column", lg: "row" }}>
+          <Reveal left width={{ xs: "90%", sm: "66%", lg: "41%" }}>
             <Text color="#444" fontWeight="500" mb="1rem">
               WHAT WE DO
             </Text>
@@ -16,21 +16,22 @@ const WhatWeDo: React.FC = () => {
               fontWeight="700"
               fontSize="5xl"
               lineHeight="48px"
-              width="360px"
+              mb={{ xs: "3rem", lg: "0" }}
+              width={{ lg: "360px" }}
             >
               Your team's extended arm to accomplish more in less time
             </Text>
           </Reveal>
-          <Box pb="120px" ml="8.3%" width="50%">
+          <Box pb="120px" ml={{ lg: "8.3%" }} width={{ lg: "50%" }}>
             <Reveal right>
-              <Text px="1rem" color="textGray">
+              <Text px={{ sm: "1rem" }} color="textGray">
                 Our clients are SaaS teams, Web Design Agencies and Individuals
                 who have researched their project and usually have
                 well-documented requirements.
               </Text>
             </Reveal>
             <Reveal delay={0.5} d="flex" flexWrap="wrap" width="100%">
-              <Box mt="1.4rem" px="1rem" width="50%">
+              <Box mt="1.4rem" px={{ sm: "1rem" }} width={{ sm: "50%" }}>
                 <Img src="/images/icon/2.png" />
                 <Text py="1.5rem" fontSize="1.5rem" fontWeight="700">
                   Collaboration
@@ -40,7 +41,7 @@ const WhatWeDo: React.FC = () => {
                   into modern web experience
                 </Text>
               </Box>
-              <Box mt="1.4rem" px="1rem" width="50%">
+              <Box mt="1.4rem" px={{ sm: "1rem" }} width={{ sm: "50%" }}>
                 <Img src="/images/icon/3.png" />
                 <Text py="1.5rem" fontSize="1.5rem" fontWeight="700">
                   Technology Research
@@ -50,7 +51,7 @@ const WhatWeDo: React.FC = () => {
                   us
                 </Text>
               </Box>
-              <Box mt="1.4rem" px="1rem" width="50%">
+              <Box mt="1.4rem" px={{ sm: "1rem" }} width={{ sm: "50%" }}>
                 <Img src="/images/icon/4.png" />
                 <Text py="1.5rem" fontSize="1.5rem" fontWeight="700">
                   Modern Tools
@@ -60,7 +61,7 @@ const WhatWeDo: React.FC = () => {
                   delivery updates with your systems.
                 </Text>
               </Box>
-              <Box mt="1.4rem" px="1rem" width="50%">
+              <Box mt="1.4rem" px={{ sm: "1rem" }} width={{ sm: "50%" }}>
                 <Img src="/images/icon/5.png" />
                 <Text py="1.5rem" fontSize="1.5rem" fontWeight="700">
                   Customer Success

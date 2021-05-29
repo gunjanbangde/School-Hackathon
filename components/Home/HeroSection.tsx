@@ -13,14 +13,13 @@ const HeroSection: React.FC = () => {
   //   };
   return (
     <Box
-      height="100vh"
-      width="100vw"
+      height={{ lg: "100vh" }}
       p="180px 0 130px"
-      bg="url(/images/clipart/4.png) no-repeat right bottom/60.5%"
+      bg={{ md: "url(/images/clipart/4.png) no-repeat right bottom/60.5%" }}
     >
       <Container maxWidth="1200px">
-        <Flex>
-          <Box width="41%">
+        <Flex flexDirection={{ xs: "column-reverse", lg: "row" }}>
+          <Box width={{ sm: "41%" }}>
             <Reveal left>
               <Text
                 as="h1"
@@ -50,7 +49,7 @@ const HeroSection: React.FC = () => {
               </Button>
             </Reveal>
           </Box>
-          <Box width="58%">
+          <Box height={{ xs: "40%", sm: "auto" }} width="58%">
             {/* <Lottie options={lottieOptions} height="100%" width="100%" /> */}
           </Box>
         </Flex>

@@ -5,7 +5,7 @@ import Reveal from "../library/Reveal";
 const TalkToUs: React.FC = () => {
   return (
     <>
-      <Box width="100vw" bg="textBlack" p="120px 0">
+      <Box bg="textBlack" p="120px 0">
         <Container maxWidth="1200px">
           <Box textAlign="center" width="100%">
             <Reveal>

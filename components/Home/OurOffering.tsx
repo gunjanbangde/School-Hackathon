@@ -14,11 +14,11 @@ import Reveal from "../library/Reveal";
 
 const OurOffering: React.FC = () => {
   return (
-    <Box width="100vw" p="120px 0" bg="#ebf4ff">
+    <Box p="120px 0" bg="#ebf4ff">
       <Container maxWidth="1200px">
-        <Flex>
+        <Flex flexDirection={{ xs: "column", lg: "row" }}>
           <Box width="50%"></Box>
-          <Box ml="8.3%" width="50%">
+          <Box ml={{ lg: "8.3%" }} width={{ sm: "50%" }}>
             <Reveal right>
               <Text color="#444" fontWeight="500" mb="1rem">
                 OUR OFFERINGS
@@ -76,7 +76,7 @@ const OurOffering: React.FC = () => {
                   Web SDK Development
                 </ListItem>
               </List>
-              <Reveal delay={0.5} right>
+              <Reveal delay={0.5} bottom>
                 <Button
                   borderRadius="3px"
                   bg="textBlack"

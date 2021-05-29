@@ -8,9 +8,10 @@ const Navbar: React.FC = () => {
       bg="white"
       top="0"
       left="0"
-      width="100%"
+      zIndex="sticky"
+      width="100vw"
       height="74px"
-      px="100px"
+      px={{ md: "100px" }}
     >
       <Container maxWidth="none" height="100%" width="100%">
         <Flex
@@ -19,8 +20,9 @@ const Navbar: React.FC = () => {
           alignItems="center"
           justifyContent="space-between"
         >
-          <Img src="/images/logo.svg" height="48px" />
+          <Img src="/images/logo.svg" height={{ sm: "48px" }} />
           <Button
+            display={{ xs: "none", sm: "block" }}
             borderRadius="3px"
             height="44px"
             p="0 25px"
