@@ -37,16 +37,21 @@ const HeroSection: React.FC = () => {
               </Text>
             </Reveal>
             <Reveal d="flex" delay={0.4} mt="3rem">
-              <Button
-                borderRadius="3px"
-                bg="textBlack"
-                color="white"
-                p="0 35px"
-                height="54px"
-                fontWeight="500"
-              >
-                Schedule a Call
-              </Button>
+              <a href="https://bit.ly/tif-abhishek" target="_blank">
+                <Button
+                  borderRadius="3px"
+                  bg="textBlack"
+                  color="white"
+                  p="0 35px"
+                  height="54px"
+                  fontWeight="500"
+                  _hover={{
+                    bg: "teal.300",
+                  }}
+                >
+                  Schedule a Call
+                </Button>
+              </a>
             </Reveal>
           </Box>
           <Box height={{ xs: "40%", sm: "auto" }} width="58%">

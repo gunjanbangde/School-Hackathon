@@ -21,16 +21,21 @@ const Navbar: React.FC = () => {
           justifyContent="space-between"
         >
           <Img src="/images/logo.svg" height={{ sm: "48px" }} />
-          <Button
-            display={{ xs: "none", sm: "block" }}
-            borderRadius="3px"
-            height="44px"
-            p="0 25px"
-            color="white"
-            bg="primary"
-          >
-            Schedule a Call
-          </Button>
+          <a href="https://bit.ly/tif-abhishek" target="_blank">
+            <Button
+              display={{ xs: "none", sm: "block" }}
+              borderRadius="3px"
+              height="44px"
+              p="0 25px"
+              color="white"
+              bg="primary"
+              _hover={{
+                bg: "teal.200",
+              }}
+            >
+              Schedule a Call
+            </Button>
+          </a>
         </Flex>
       </Container>
     </Box>
