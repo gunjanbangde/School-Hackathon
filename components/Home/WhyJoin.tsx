@@ -1,5 +1,5 @@
 import React from "react";
-import { Box, Flex, Text, Img, Container } from "@chakra-ui/react";
+import { Box, Flex, Text, Container } from "@chakra-ui/react";
 import { HiOutlineLightBulb } from "react-icons/hi";
 import { FaMedal } from "react-icons/fa";
 import { GiGears } from "react-icons/gi";
