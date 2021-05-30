@@ -23,6 +23,9 @@ const colors = {
 export const theme = extendTheme({
   colors,
   breakpoints,
+  components: {
+    Button: { baseStyle: { _focus: { boxShadow: "none", outline: "none" } } },
+  },
 });
 
 export default theme;

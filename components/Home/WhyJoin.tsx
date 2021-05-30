@@ -1,5 +1,12 @@
 import React from "react";
-import { Box, Flex, Text, Container } from "@chakra-ui/react";
+import {
+  Box,
+  Flex,
+  Text,
+  Container,
+  ListItem,
+  UnorderedList,
+} from "@chakra-ui/react";
 import { HiOutlineLightBulb } from "react-icons/hi";
 import { FaMedal } from "react-icons/fa";
 import { GiGears } from "react-icons/gi";
@@ -8,6 +15,7 @@ import Lottie from "react-lottie";
 
 import Reveal from "../library/Reveal";
 import animationData from "@/public/assets/why_lottie.json";
+import ThemeCarousel from "./Carousel";
 
 const WhyJoin: React.FC = () => {
   const lottieOptions = {
@@ -18,6 +26,17 @@ const WhyJoin: React.FC = () => {
       preserveAspectRatio: "xMidYMid slice",
     },
   };
+
+  const themeData = [
+    [
+      "Irrigation",
+      "Water conservation",
+      "IOT applications in agriculture and rural development",
+      "Water purifiers for purifying the flowing water in the lakes",
+      "Low cost equipment to use in agricultural applications",
+    ],
+  ];
+
   return (
     <Box
       width="100%"
@@ -35,7 +54,6 @@ const WhyJoin: React.FC = () => {
                 textAlign="center"
                 lineHeight="48px"
                 mb={{ xs: "3rem", md: "0", lg: "0" }}
-                width={{ lg: "360px" }}
               >
                 Why Join Hackathon?
               </Text>
@@ -117,6 +135,27 @@ const WhyJoin: React.FC = () => {
                 </Text>
               </Reveal>
             </Flex>
+          </Box>
+        </Flex>
+        <Text
+          textAlign="center"
+          fontSize="5xl"
+          fontWeight="700"
+          my="2rem"
+          color="white"
+        >
+          Themes
+        </Text>
+        <Flex pl="2rem">
+          <Box width="45%">
+            <UnorderedList color="white" fontSize="2xl">
+              {themeData[0].map((data, i) => (
+                <ListItem key={i}>{data}</ListItem>
+              ))}
+            </UnorderedList>
+          </Box>
+          <Box width="55%">
+            <ThemeCarousel />
           </Box>
         </Flex>
       </Container>
