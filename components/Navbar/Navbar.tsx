@@ -18,7 +18,7 @@ const Navbar: React.FC = () => {
           width="100%"
           height="100%"
           alignItems="center"
-          justifyContent="space-between"
+          justifyContent={{ xs: "center", lg: "space-between" }}
         >
           <Img
             src="https://via.placeholder.com/200x48.png?text=LOGO+HERE"

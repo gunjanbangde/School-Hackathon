@@ -22,14 +22,14 @@ const HeroSection: React.FC = () => {
       p="180px 0 130px"
       bg={{ md: "url(/images/clipart/4.png) no-repeat right bottom/60.5%" }}
     >
-      <Container maxWidth="1440px" px="80px">
+      <Container maxWidth="1440px" px={{ xs: "20px", lg: "80px" }}>
         <Flex flexDirection={{ xs: "column-reverse", lg: "row" }}>
           <Box width={{ sm: "41%" }}>
             <Reveal left>
               <Text
                 as="h1"
-                mb="3rem"
-                fontSize="5xl"
+                mb={{ xs: "1rem", lg: "3rem" }}
+                fontSize={{ xs: "4xl", lg: "5xl" }}
                 fontWeight="700"
                 color="#22223b"
               >
@@ -41,7 +41,7 @@ const HeroSection: React.FC = () => {
                 Magna fermentum iaculis eu non diam phasellus.
               </Text>
             </Reveal>
-            <Reveal d="flex" delay={0.4} mt="3rem">
+            <Reveal d="flex" justifyContent="center" delay={0.4} mt="3rem">
               <Button
                 borderRadius="3px"
                 bg="linkedin.500"
@@ -56,7 +56,7 @@ const HeroSection: React.FC = () => {
               </Button>
             </Reveal>
           </Box>
-          <Box height={{ xs: "40%", sm: "auto" }} width="58%">
+          <Box height={{ xs: "40%", sm: "auto" }} width={{ lg: "58%" }}>
             <Lottie options={lottieOptions} height="100%" width="100%" />
           </Box>
         </Flex>
