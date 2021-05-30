@@ -21,8 +21,11 @@ const HeroSection: React.FC = () => {
       width="100%"
       p="180px 0 130px"
     >
-      <Container maxWidth="1440px" px={{ xs: "20px", md: "80px" }}>
-        <Flex flexDirection={{ xs: "column-reverse", md: "row" }}>
+      <Container maxWidth="1440px" px={{ xs: "20px", lg: "80px" }}>
+        <Flex
+          alignItems="center"
+          flexDirection={{ xs: "column-reverse", lg: "row" }}
+        >
           <Box width={{ lg: "41%" }}>
             <Reveal left>
               <Text
@@ -30,11 +33,16 @@ const HeroSection: React.FC = () => {
                 mb={{ xs: "1rem", lg: "3rem" }}
                 fontSize={{ xs: "4xl", lg: "5xl" }}
                 fontWeight="700"
+                textAlign={{ xs: "center", lg: "left" }}
                 color="primary"
               >
                 Some Hackathon
               </Text>
-              <Text color="#14213d" mb="1rem">
+              <Text
+                textAlign={{ xs: "center", lg: "left" }}
+                color="#14213d"
+                mb="1rem"
+              >
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                 eiusmod tempor incididunt ut labore et dolore magna aliqua.
                 Magna fermentum iaculis eu non diam phasellus.
@@ -42,7 +50,7 @@ const HeroSection: React.FC = () => {
             </Reveal>
             <Reveal
               d="flex"
-              justifyContent={{ xs: "center", md: "flex-start" }}
+              justifyContent={{ xs: "center", lg: "flex-start" }}
               delay={0.4}
               mt="3rem"
             >
@@ -62,9 +70,14 @@ const HeroSection: React.FC = () => {
               </a>
             </Reveal>
           </Box>
-          <Box height={{ xs: "40%", sm: "auto" }} width={{ lg: "58%" }}>
+          <Reveal
+            right
+            delay={0.4}
+            height={{ xs: "40%", sm: "auto" }}
+            width={{ lg: "58%" }}
+          >
             <Lottie options={lottieOptions} height="100%" width="100%" />
-          </Box>
+          </Reveal>
         </Flex>
       </Container>
     </Flex>

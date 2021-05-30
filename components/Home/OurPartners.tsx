@@ -32,10 +32,18 @@ const OurPartners: React.FC = () => {
             columns={{ xs: 2, sm: 4 }}
             spacing={{ xs: 10, lg: 40 }}
           >
-            <Img my="auto" width="100%" src="/assets/NBA.png" />
-            <Img my="auto" width="100%" src="/assets/25.png" />
-            <Img my="auto" width="100%" src="/assets/nirf.jpg" />
-            <Img my="auto" width="100%" src="/assets/logo.png" />
+            <Reveal>
+              <Img my="auto" width="100%" src="/assets/NBA.png" />
+            </Reveal>
+            <Reveal>
+              <Img my="auto" width="100%" src="/assets/25.png" />
+            </Reveal>
+            <Reveal>
+              <Img my="auto" width="100%" src="/assets/nirf.jpg" />
+            </Reveal>
+            <Reveal>
+              <Img my="auto" width="100%" src="/assets/logo.png" />
+            </Reveal>
           </SimpleGrid>
         </Flex>
       </Container>
