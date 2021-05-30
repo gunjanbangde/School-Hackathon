@@ -36,7 +36,7 @@ const HeroSection: React.FC = () => {
                 textAlign={{ xs: "center", lg: "left" }}
                 color="primary"
               >
-                Some Hackathon
+                LNCT Hackathon
               </Text>
               <Text
                 textAlign={{ xs: "center", lg: "left" }}
