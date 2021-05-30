@@ -30,7 +30,7 @@ const Navbar: React.FC = () => {
             height="44px"
             p="0 25px"
             color="white"
-            bg="primaryLight"
+            bg="linkedin.500"
             _hover={{
               bg: "linkedin.300",
             }}

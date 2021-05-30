@@ -31,6 +31,7 @@ const HeroSection: React.FC = () => {
                 mb={{ xs: "1rem", lg: "3rem" }}
                 fontSize={{ xs: "4xl", lg: "5xl" }}
                 fontWeight="700"
+                color="facebook.900"
               >
                 Some Hackathon
               </Text>
@@ -48,7 +49,7 @@ const HeroSection: React.FC = () => {
             >
               <Button
                 borderRadius="3px"
-                bg="primaryLight"
+                bg="linkedin.500"
                 color="white"
                 p="0 35px"
                 height="54px"
