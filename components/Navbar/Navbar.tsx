@@ -22,19 +22,21 @@ const Navbar: React.FC = () => {
           justifyContent={{ xs: "center", sm: "space-between" }}
         >
           <Img src="/assets/logo.png" height={{ sm: "48px" }} />
-          <Button
-            display={{ xs: "none", sm: "block" }}
-            borderRadius="3px"
-            height="44px"
-            p="0 25px"
-            color="white"
-            bg="primary"
-            _hover={{
-              bg: "linkedin.300",
-            }}
-          >
-            Register Now
-          </Button>
+          <a href="https://forms.gle/ajG1vV8acTq1gnDX6" target="_blank">
+            <Button
+              display={{ xs: "none", sm: "block" }}
+              borderRadius="3px"
+              height="44px"
+              p="0 25px"
+              color="white"
+              bg="primary"
+              _hover={{
+                bg: "linkedin.300",
+              }}
+            >
+              Register Now
+            </Button>
+          </a>
         </Flex>
       </Container>
     </Box>

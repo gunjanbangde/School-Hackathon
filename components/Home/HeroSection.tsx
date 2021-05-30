@@ -46,18 +46,20 @@ const HeroSection: React.FC = () => {
               delay={0.4}
               mt="3rem"
             >
-              <Button
-                borderRadius="3px"
-                bg="primary"
-                color="white"
-                p="0 35px"
-                height="54px"
-                _hover={{
-                  bg: "linkedin.300",
-                }}
-              >
-                Register Now
-              </Button>
+              <a href="https://forms.gle/ajG1vV8acTq1gnDX6" target="_blank">
+                <Button
+                  borderRadius="3px"
+                  bg="primary"
+                  color="white"
+                  p="0 35px"
+                  height="54px"
+                  _hover={{
+                    bg: "linkedin.300",
+                  }}
+                >
+                  Register Now
+                </Button>
+              </a>
             </Reveal>
           </Box>
           <Box height={{ xs: "40%", sm: "auto" }} width={{ lg: "58%" }}>

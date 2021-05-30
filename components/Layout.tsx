@@ -1,6 +1,7 @@
 import React, { ReactNode } from "react";
 import Head from "next/head";
 import Navbar from "components/Navbar/Navbar";
+import Footer from "./Footer/Footer";
 
 interface Props {
   title?: string;
@@ -14,6 +15,7 @@ const Layout: React.FC = ({ title, children }: Props) => (
     </Head>
     <Navbar />
     {children}
+    <Footer />
   </>
 );
 export default Layout;
