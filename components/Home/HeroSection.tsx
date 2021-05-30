@@ -41,7 +41,12 @@ const HeroSection: React.FC = () => {
                 Magna fermentum iaculis eu non diam phasellus.
               </Text>
             </Reveal>
-            <Reveal d="flex" justifyContent="center" delay={0.4} mt="3rem">
+            <Reveal
+              d="flex"
+              justifyContent={{ xs: "center", md: "flex-start" }}
+              delay={0.4}
+              mt="3rem"
+            >
               <Button
                 borderRadius="3px"
                 bg="linkedin.500"
