@@ -16,7 +16,7 @@ const colors = {
   primeYellow: "#FFDA57",
   iconGray: "#B0B0B0",
   textGray: "#666666",
-  textBlack: "#171614",
+  textBlack: "#000000FF",
 };
 
 export const theme = extendTheme({

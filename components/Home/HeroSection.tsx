@@ -1,24 +1,28 @@
 import React from "react";
 import { Box, Flex, Text, Container, Button } from "@chakra-ui/react";
+import Lottie from "react-lottie";
+
+import animationData from "@/public/assets/hero_lottie.json";
 import Reveal from "../library/Reveal";
 
 const HeroSection: React.FC = () => {
-  //   const lottieOptions = {
-  //     loop: true,
-  //     autoplay: true,
-  //     animationData,
-  //     rendererSettings: {
-  //       preserveAspectRatio: "xMidYMid slice",
-  //     },
-  //   };
+  const lottieOptions = {
+    loop: true,
+    autoplay: true,
+    animationData,
+    rendererSettings: {
+      preserveAspectRatio: "xMidYMid slice",
+    },
+  };
   return (
-    <Box
+    <Flex
+      alignItems="center"
       height={{ lg: "100vh" }}
       width="100%"
       p="180px 0 130px"
       bg={{ md: "url(/images/clipart/4.png) no-repeat right bottom/60.5%" }}
     >
-      <Container maxWidth="1200px">
+      <Container maxWidth="1440px" px="80px">
         <Flex flexDirection={{ xs: "column-reverse", lg: "row" }}>
           <Box width={{ sm: "41%" }}>
             <Reveal left>
@@ -27,40 +31,37 @@ const HeroSection: React.FC = () => {
                 mb="3rem"
                 fontSize="5xl"
                 fontWeight="700"
-                color="textBlack"
-                lineHeight="61px"
+                color="#22223b"
               >
-                Dedicated team to build your SaaS project <em>faster</em>
+                Some Hackathon
               </Text>
-              <Text mb="1rem" color="textGray">
-                A team of experienced folks who understand the nuances of
-                building modern internet products
+              <Text color="#14213d" mb="1rem">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                Magna fermentum iaculis eu non diam phasellus.
               </Text>
             </Reveal>
             <Reveal d="flex" delay={0.4} mt="3rem">
-              <a href="https://bit.ly/tif-abhishek" target="_blank">
-                <Button
-                  borderRadius="3px"
-                  bg="textBlack"
-                  color="white"
-                  p="0 35px"
-                  height="54px"
-                  fontWeight="500"
-                  _hover={{
-                    bg: "teal.300",
-                  }}
-                >
-                  Schedule a Call
-                </Button>
-              </a>
+              <Button
+                borderRadius="3px"
+                bg="linkedin.500"
+                color="white"
+                p="0 35px"
+                height="54px"
+                _hover={{
+                  bg: "linkedin.300",
+                }}
+              >
+                Register Now
+              </Button>
             </Reveal>
           </Box>
           <Box height={{ xs: "40%", sm: "auto" }} width="58%">
-            {/* <Lottie options={lottieOptions} height="100%" width="100%" /> */}
+            <Lottie options={lottieOptions} height="100%" width="100%" />
           </Box>
         </Flex>
       </Container>
-    </Box>
+    </Flex>
   );
 };
 

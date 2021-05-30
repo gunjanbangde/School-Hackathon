@@ -77,22 +77,20 @@ const OurOffering: React.FC = () => {
                 </ListItem>
               </List>
               <Reveal delay={0.5} bottom>
-                <a href="https://bit.ly/tif-abhishek" target="_blank">
-                  <Button
-                    borderRadius="3px"
-                    bg="textBlack"
-                    color="white"
-                    p="0 35px"
-                    mt="3rem"
-                    height="54px"
-                    fontWeight="500"
-                    _hover={{
-                      bg: "teal.300",
-                    }}
-                  >
-                    Schedule a Call
-                  </Button>
-                </a>
+                <Button
+                  borderRadius="3px"
+                  bg="textBlack"
+                  color="white"
+                  p="0 35px"
+                  mt="3rem"
+                  height="54px"
+                  fontWeight="500"
+                  _hover={{
+                    bg: "teal.300",
+                  }}
+                >
+                  Schedule a Call
+                </Button>
               </Reveal>
             </Reveal>
           </Box>

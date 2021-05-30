@@ -20,22 +20,23 @@ const Navbar: React.FC = () => {
           alignItems="center"
           justifyContent="space-between"
         >
-          <Img src="/images/logo.svg" height={{ sm: "48px" }} />
-          <a href="https://bit.ly/tif-abhishek" target="_blank">
-            <Button
-              display={{ xs: "none", sm: "block" }}
-              borderRadius="3px"
-              height="44px"
-              p="0 25px"
-              color="white"
-              bg="primary"
-              _hover={{
-                bg: "teal.200",
-              }}
-            >
-              Schedule a Call
-            </Button>
-          </a>
+          <Img
+            src="https://via.placeholder.com/200x48.png?text=LOGO+HERE"
+            height={{ sm: "48px" }}
+          />
+          <Button
+            display={{ xs: "none", sm: "block" }}
+            borderRadius="3px"
+            height="44px"
+            p="0 25px"
+            color="white"
+            bg="linkedin.500"
+            _hover={{
+              bg: "linkedin.300",
+            }}
+          >
+            Register Now
+          </Button>
         </Flex>
       </Container>
     </Box>
