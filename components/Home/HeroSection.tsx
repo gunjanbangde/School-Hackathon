@@ -20,7 +20,6 @@ const HeroSection: React.FC = () => {
       height={{ lg: "100vh" }}
       width="100%"
       p="180px 0 130px"
-      bg={{ md: "url(/images/clipart/4.png) no-repeat right bottom/60.5%" }}
     >
       <Container maxWidth="1440px" px={{ xs: "20px", lg: "80px" }}>
         <Flex flexDirection={{ xs: "column-reverse", lg: "row" }}>
@@ -31,11 +30,11 @@ const HeroSection: React.FC = () => {
                 mb={{ xs: "1rem", lg: "3rem" }}
                 fontSize={{ xs: "4xl", lg: "5xl" }}
                 fontWeight="700"
-                color="#22223b"
+                color="facebook.900"
               >
                 Some Hackathon
               </Text>
-              <Text color="#14213d" mb="1rem">
+              <Text color="gray.600" mb="1rem">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                 eiusmod tempor incididunt ut labore et dolore magna aliqua.
                 Magna fermentum iaculis eu non diam phasellus.

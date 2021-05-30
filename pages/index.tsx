@@ -3,7 +3,7 @@ import React from "react";
 import Layout from "components/Layout";
 import HeroSection from "@/components/Home/HeroSection";
 // import OurOffering from "@/components/Home/OurOffering";
-// import WhatWeDo from "@/components/Home/WhatWeDo";
+import WhyJoin from "@/components/Home/WhyJoin";
 // import TalkToUs from "@/components/Home/TalkToUs";
 
 const Home: React.FC = () => {
@@ -11,7 +11,7 @@ const Home: React.FC = () => {
     <Layout>
       <HeroSection />
       {/* <OurOffering /> */}
-      {/* <WhatWeDo /> */}
+      <WhyJoin />
       {/* <TalkToUs /> */}
     </Layout>
   );
