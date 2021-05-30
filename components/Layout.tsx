@@ -28,7 +28,7 @@ const Layout: React.FC = ({ title, children }: Props) => (
         href="/favicon-16x16.png"
       />
       <link rel="manifest" href="/site.webmanifest" />
-      <title>{title ? `${title} | TIF` : "The Internet Folks"}</title>
+      <title>{title ? `${title} | TIF` : "Hackathon"}</title>
     </Head>
     <Navbar />
     {children}
