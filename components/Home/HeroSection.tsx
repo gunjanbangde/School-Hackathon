@@ -31,7 +31,6 @@ const HeroSection: React.FC = () => {
                 mb={{ xs: "1rem", lg: "3rem" }}
                 fontSize={{ xs: "4xl", lg: "5xl" }}
                 fontWeight="700"
-                color="#22223b"
               >
                 Some Hackathon
               </Text>
