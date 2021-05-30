@@ -21,27 +21,28 @@ const WhyJoin: React.FC = () => {
   return (
     <Box
       width="100%"
-      pt="120px"
+      py={{ xs: "60px", sm: "120px" }}
       bg="linear-gradient(180deg,#261063 0%,#9B437BFA 100%)"
     >
       <Container maxWidth="1440px" px={{ xs: "20px", lg: "80px" }}>
-        <Flex flexDirection={{ xs: "column", lg: "row" }}>
-          <Box width={{ xs: "90%", sm: "66%", lg: "41%" }}>
+        <Flex alignItems="center" flexDirection={{ xs: "column", lg: "row" }}>
+          <Box width={{ xs: "90%", md: "60%", lg: "41%" }}>
             <Reveal left>
               <Text
                 color="white"
                 fontWeight="700"
                 fontSize="5xl"
+                textAlign="center"
                 lineHeight="48px"
-                mb={{ xs: "3rem", lg: "0" }}
+                mb={{ xs: "3rem", md: "0", lg: "0" }}
                 width={{ lg: "360px" }}
               >
                 Why Join Hackathon?
               </Text>
-              <Lottie options={lottieOptions} height="100%" width="100%" />
+              <Lottie options={lottieOptions} height="100%" width="auto" />
             </Reveal>
           </Box>
-          <Box pb="120px" ml={{ lg: "8.3%" }} width={{ lg: "50%" }}>
+          <Box ml={{ lg: "8.3%" }} width={{ lg: "50%" }}>
             <Flex flexWrap="wrap" width="100%">
               <Reveal mt="1.4rem" px={{ sm: "1rem" }} width={{ sm: "50%" }}>
                 <Text color="white" fontSize="6xl">

@@ -2,17 +2,17 @@ import React from "react";
 
 import Layout from "components/Layout";
 import HeroSection from "@/components/Home/HeroSection";
-// import OurOffering from "@/components/Home/OurOffering";
+import OurPartners from "@/components/Home/OurPartners";
 import WhyJoin from "@/components/Home/WhyJoin";
-// import TalkToUs from "@/components/Home/TalkToUs";
+import ProcessFlow from "@/components/Home/ProcessFlow";
 
 const Home: React.FC = () => {
   return (
     <Layout>
       <HeroSection />
-      {/* <OurOffering /> */}
+      <OurPartners />
+      <ProcessFlow />
       <WhyJoin />
-      {/* <TalkToUs /> */}
     </Layout>
   );
 };

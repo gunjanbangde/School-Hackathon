@@ -12,25 +12,23 @@ const Navbar: React.FC = () => {
       width="100vw"
       height="74px"
       px={{ md: "100px" }}
+      boxShadow="0px 1px 20px 0px rgba(0,0,0,0.1)"
     >
       <Container maxWidth="none" height="100%" width="100%">
         <Flex
           width="100%"
           height="100%"
           alignItems="center"
-          justifyContent={{ xs: "center", lg: "space-between" }}
+          justifyContent={{ xs: "center", sm: "space-between" }}
         >
-          <Img
-            src="https://via.placeholder.com/200x48.png?text=LOGO+HERE"
-            height={{ sm: "48px" }}
-          />
+          <Img src="/assets/logo.png" height={{ sm: "48px" }} />
           <Button
             display={{ xs: "none", sm: "block" }}
             borderRadius="3px"
             height="44px"
             p="0 25px"
             color="white"
-            bg="linkedin.500"
+            bg="primary"
             _hover={{
               bg: "linkedin.300",
             }}

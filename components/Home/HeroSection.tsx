@@ -20,18 +20,17 @@ const HeroSection: React.FC = () => {
       height={{ lg: "100vh" }}
       width="100%"
       p="180px 0 130px"
-      bg={{ md: "url(/images/clipart/4.png) no-repeat right bottom/60.5%" }}
     >
-      <Container maxWidth="1440px" px={{ xs: "20px", lg: "80px" }}>
-        <Flex flexDirection={{ xs: "column-reverse", lg: "row" }}>
-          <Box width={{ sm: "41%" }}>
+      <Container maxWidth="1440px" px={{ xs: "20px", md: "80px" }}>
+        <Flex flexDirection={{ xs: "column-reverse", md: "row" }}>
+          <Box width={{ lg: "41%" }}>
             <Reveal left>
               <Text
                 as="h1"
                 mb={{ xs: "1rem", lg: "3rem" }}
                 fontSize={{ xs: "4xl", lg: "5xl" }}
                 fontWeight="700"
-                color="facebook.900"
+                color="primary"
               >
                 Some Hackathon
               </Text>
@@ -49,7 +48,7 @@ const HeroSection: React.FC = () => {
             >
               <Button
                 borderRadius="3px"
-                bg="linkedin.500"
+                bg="primary"
                 color="white"
                 p="0 35px"
                 height="54px"
