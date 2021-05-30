@@ -19,13 +19,17 @@ const WhyJoin: React.FC = () => {
     },
   };
   return (
-    <Box width="100%" pt="120px" bg="linkedin.100">
+    <Box
+      width="100%"
+      pt="120px"
+      bg="linear-gradient(180deg,#261063 0%,#9B437BFA 100%)"
+    >
       <Container maxWidth="1440px" px={{ xs: "20px", lg: "80px" }}>
         <Flex flexDirection={{ xs: "column", lg: "row" }}>
           <Box width={{ xs: "90%", sm: "66%", lg: "41%" }}>
             <Reveal left>
               <Text
-                color="facebook.900"
+                color="white"
                 fontWeight="700"
                 fontSize="5xl"
                 lineHeight="48px"
@@ -40,73 +44,73 @@ const WhyJoin: React.FC = () => {
           <Box pb="120px" ml={{ lg: "8.3%" }} width={{ lg: "50%" }}>
             <Flex flexWrap="wrap" width="100%">
               <Reveal mt="1.4rem" px={{ sm: "1rem" }} width={{ sm: "50%" }}>
-                <Text color="linkedin.700" fontSize="6xl">
+                <Text color="white" fontSize="6xl">
                   <HiOutlineLightBulb />
                 </Text>
                 <Text
                   mt="1rem"
                   mb="0.5rem"
-                  color="facebook.900"
+                  color="white"
                   fontSize="1.5rem"
                   fontWeight="700"
                 >
                   Innovative Solutions
                 </Text>
-                <Text color="gray.600" mb="1rem">
+                <Text color="gray.400" mb="1rem">
                   Build innovative solutions for problems. Be a part of Nation
                   Building Opportunity.
                 </Text>
               </Reveal>
               <Reveal mt="1.4rem" px={{ sm: "1rem" }} width={{ sm: "50%" }}>
-                <Text pb="0.5rem" color="linkedin.700" fontSize="5xl">
+                <Text pb="0.5rem" color="white" fontSize="5xl">
                   <IoEarthSharp />
                 </Text>
                 <Text
                   mt="1rem"
                   mb="0.5rem"
-                  color="facebook.900"
+                  color="white"
                   fontSize="1.5rem"
                   fontWeight="700"
                 >
                   Innovation Movement
                 </Text>
-                <Text color="gray.600" mb="1rem">
+                <Text color="gray.400" mb="1rem">
                   Be part of World’s biggest Open Innovation Movement
                   Opportunity to work with some of the best talents.
                 </Text>
               </Reveal>
               <Reveal mt="1.4rem" px={{ sm: "1rem" }} width={{ sm: "50%" }}>
-                <Text pb="0.5rem" color="linkedin.700" fontSize="5xl">
+                <Text pb="0.5rem" color="white" fontSize="5xl">
                   <GiGears />
                 </Text>
                 <Text
                   mt="1rem"
                   mb="0.5rem"
-                  color="facebook.900"
+                  color="white"
                   fontSize="1.5rem"
                   fontWeight="700"
                 >
                   Out-Of-The-Box Solutions
                 </Text>
-                <Text color="gray.600" mb="1rem">
+                <Text color="gray.400" mb="1rem">
                   Talented youngsters from all over the country offer
                   out-of-the-box solutions to your problems
                 </Text>
               </Reveal>
               <Reveal mt="1.4rem" px={{ sm: "1rem" }} width={{ sm: "50%" }}>
-                <Text pb="0.5rem" color="linkedin.700" fontSize="5xl">
+                <Text pb="0.5rem" color="white" fontSize="5xl">
                   <FaMedal />
                 </Text>
                 <Text
                   mt="1rem"
                   mb="0.5rem"
-                  color="facebook.900"
+                  color="white"
                   fontSize="1.5rem"
                   fontWeight="700"
                 >
                   Recognition And Visibility
                 </Text>
-                <Text color="gray.600" mb="1rem">
+                <Text color="gray.400" mb="1rem">
                   Nationally Recognition and visibility for your company across
                   all premier institutions in India
                 </Text>
