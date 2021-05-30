@@ -14,6 +14,7 @@ const HeroSection: React.FC = () => {
   return (
     <Box
       height={{ lg: "100vh" }}
+      width="100%"
       p="180px 0 130px"
       bg={{ md: "url(/images/clipart/4.png) no-repeat right bottom/60.5%" }}
     >

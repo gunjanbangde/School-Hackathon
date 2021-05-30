@@ -4,7 +4,7 @@ import Reveal from "../library/Reveal";
 
 const WhatWeDo: React.FC = () => {
   return (
-    <Box pt="120px">
+    <Box width="100%" pt="120px">
       <Container maxWidth="1200px">
         <Flex flexDirection={{ xs: "column", lg: "row" }}>
           <Reveal left width={{ xs: "90%", sm: "66%", lg: "41%" }}>

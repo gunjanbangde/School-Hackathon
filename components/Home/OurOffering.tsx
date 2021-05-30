@@ -14,7 +14,7 @@ import Reveal from "../library/Reveal";
 
 const OurOffering: React.FC = () => {
   return (
-    <Box p="120px 0" bg="#ebf4ff">
+    <Box width="100%" p="120px 0" bg="#ebf4ff">
       <Container maxWidth="1200px">
         <Flex flexDirection={{ xs: "column", lg: "row" }}>
           <Box width="50%"></Box>

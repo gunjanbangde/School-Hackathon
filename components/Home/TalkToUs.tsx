@@ -5,7 +5,7 @@ import Reveal from "../library/Reveal";
 const TalkToUs: React.FC = () => {
   return (
     <>
-      <Box bg="textBlack" p="120px 0">
+      <Box width="100%" bg="textBlack" p="120px 0">
         <Container maxWidth="1200px">
           <Box textAlign="center" width="100%">
             <Reveal>
@@ -39,7 +39,7 @@ const TalkToUs: React.FC = () => {
           </Box>
         </Container>
       </Box>
-      <Box py="1rem">
+      <Box width="100%" py="1rem">
         <Container>
           <Text color="textGray" textAlign="center">
             © 2020 The Internet Folks. All rights reserved.
