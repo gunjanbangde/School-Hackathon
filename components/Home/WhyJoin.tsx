@@ -176,12 +176,11 @@ const WhyJoin: React.FC = () => {
           flexDirection={{ xs: "column-reverse", md: "row" }}
           pl={{ md: "2rem" }}
         >
-          <Reveal>
+          <Reveal width={{ xs: "100%", md: "45%" }}>
             <MotionBox
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               key={index}
-              width={{ xs: "100%", md: "45%" }}
               minHeight="200px"
             >
               <UnorderedList color="white" fontSize="2xl">

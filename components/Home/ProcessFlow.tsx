@@ -288,6 +288,60 @@ const ProcessFlow: React.FC = () => {
                 )}
               </AccordionItem>
             </Reveal>
+            <Reveal>
+              <AccordionItem border="none" outline="none" width="100%">
+                {({ isExpanded }) => (
+                  <>
+                    <AccordionButton
+                      border="solid 1px"
+                      borderColor="gray.100"
+                      borderRadius="4px"
+                      bg="primary"
+                      _hover={{ bg: "primary" }}
+                    >
+                      <Box
+                        fontSize="3xl"
+                        color="white"
+                        flex="1"
+                        textAlign="left"
+                      >
+                        Important Dates
+                      </Box>
+                      <Text fontSize="2xl" color="white">
+                        {isExpanded ? (
+                          <MdKeyboardArrowUp />
+                        ) : (
+                          <MdKeyboardArrowDown />
+                        )}
+                      </Text>
+                    </AccordionButton>
+                    <AccordionPanel pb={4}>
+                      <UnorderedList fontSize="2xl">
+                        <ListItem>
+                          Idea Submission Deadline: June 15, 2021
+                        </ListItem>
+                        <ListItem>
+                          Shortlist for Idea Submission: June 18, 2021
+                        </ListItem>
+                        <ListItem>
+                          Second Round Idea Presentation: June 20 &21, 2021
+                        </ListItem>
+                        <ListItem>
+                          Shortlist for Prototype Demonstration: June 22, 2021
+                        </ListItem>
+                        <ListItem>
+                          Final Round Prototype Demonstration: June 28 & 29,
+                          2021
+                        </ListItem>
+                        <ListItem>
+                          Declaration of Result: June 30, 2021
+                        </ListItem>
+                      </UnorderedList>
+                    </AccordionPanel>
+                  </>
+                )}
+              </AccordionItem>
+            </Reveal>
           </Accordion>
           <Reveal mt="2rem" width="100%">
             <Text
@@ -305,29 +359,13 @@ const ProcessFlow: React.FC = () => {
               Phone Number: +91-755-6185300
             </Text>
           </Reveal>
-          <Reveal mt="2rem" width="100%">
-            <Text
-              fontWeight="700"
-              color="primary"
-              textAlign="left"
-              fontSize="3xl"
-            >
-              Important Dates
-            </Text>
-            <UnorderedList fontSize="2xl">
-              <ListItem>Idea Submission Deadline: June 15, 2021</ListItem>
-              <ListItem>Shortlist for Idea Submission: June 20, 2021</ListItem>
-              <ListItem>Final Round demonstration: June 28 & 29, 2021</ListItem>
-              <ListItem>Declaration of Result: June 30, 2021</ListItem>
-            </UnorderedList>
-          </Reveal>
           <Reveal
             d="flex"
             justifyContent={{ xs: "center", md: "flex-start" }}
             delay={0.4}
             mt="3rem"
           >
-            <a href="https://forms.gle/ajG1vV8acTq1gnDX6" target="_blank">
+            <a href="https://bit.ly/LNCT-Hackathon" target="_blank">
               <Button
                 borderRadius="3px"
                 bg="primary"

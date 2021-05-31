@@ -1,16 +1,5 @@
 import React from "react";
-import {
-  Box,
-  Flex,
-  Text,
-  Container,
-  SimpleGrid,
-  Img,
-  Table,
-  Tbody,
-  Tr,
-  Td,
-} from "@chakra-ui/react";
+import { Box, Flex, Text, Container, Button } from "@chakra-ui/react";
 
 import Reveal from "../library/Reveal";
 
@@ -59,92 +48,12 @@ const OurPartners: React.FC = () => {
               1994.
             </Text>
           </Reveal>
-          <SimpleGrid
-            width={{ xs: "90%", md: "70%", lg: "100%" }}
-            columns={{ xs: 2, sm: 4 }}
-            spacing={{ xs: 10, lg: 40 }}
-          >
-            <Reveal>
-              <Img my="auto" width="100%" src="/assets/NBA.png" />
-            </Reveal>
-            <Reveal>
-              <Img my="auto" width="100%" src="/assets/25.png" />
-            </Reveal>
-            <Reveal>
-              <Img my="auto" width="100%" src="/assets/nirf.jpg" />
-            </Reveal>
-            <Reveal>
-              <Img my="auto" width="100%" src="/assets/logo.png" />
-            </Reveal>
-          </SimpleGrid>
-          <Reveal>
-            <Table
-              mt="2rem"
-              color="white"
-              border="solid 1px #fff"
-              borderRadius="4px"
-              variant="simple"
-            >
-              <Tbody>
-                <Tr>
-                  <Td borderTopLeftRadius="4px" border="solid 1px white">
-                    Chief Patron
-                  </Td>
-                  <Td border="solid 1px white">
-                    Shri J.N. Chouksey ,Chairman, LNCT Group
-                  </Td>
-                </Tr>
-                <Tr>
-                  <Td border="solid 1px white">Patron(s)</Td>
-                  <Td border="solid 1px white">
-                    Dr. Anupam Chouksey, Secretary, LNCT Group
-                  </Td>
-                </Tr>
-                <Tr>
-                  <Td border="solid 1px white">Convener</Td>
-                  <Td border="solid 1px white">
-                    Dr. Ashok Kumar Rai, Director Administration
-                  </Td>
-                </Tr>
-                <Tr>
-                  <Td border="solid 1px white">SPOC</Td>
-                  <Td border="solid 1px white">Dr. Vivek Richhariya</Td>
-                </Tr>
-                <Tr>
-                  <Td border="solid 1px white">Organizing Member</Td>
-                  <Td border="solid 1px white">
-                    <Text>Dr. Vineet Richhariya</Text>
-                    <br />
-                    <Text>Dr. Bhupesh Gour</Text>
-                    <br /> Dr. Anoop Chaturvedi
-                  </Td>
-                </Tr>
-                <Tr>
-                  <Td border="solid 1px white">Technical Committee</Td>
-                  <Td border="solid 1px white">
-                    <Text>Prof Alka Gulati</Text>
-                    <br />
-                    <Text>Dr. Aparna Gupta</Text>
-                    <br />
-                    <Text>Prof Naveen Asathi</Text>
-                    <br />
-                    <Text>Prof Bhawna Pillai</Text>
-                    <br />
-                    <Text>Dr. Tripti Saxena</Text>
-                    <br />
-                    <Text>Prof Megha Jain</Text>
-                    <br />
-                    <Text>Prof Harendra Singh</Text>
-                    <br />
-                    <Text>Prof. Shraddha Shrivastava</Text>
-                    <br />
-                    <Text>Prof Prakhar </Text>
-                    <br />
-                    <Text>Prof Sachin Nikkam</Text>
-                  </Td>
-                </Tr>
-              </Tbody>
-            </Table>
+          <Reveal width="100%">
+            <a href="https://lnct.ac.in/" target="_blank">
+              <Button variant="outline" color="white" p="1.5rem 2rem">
+                Know More
+              </Button>
+            </a>
           </Reveal>
         </Flex>
       </Container>

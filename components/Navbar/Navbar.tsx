@@ -1,5 +1,5 @@
 import React from "react";
-import { Box, Flex, Container, Button, Img } from "@chakra-ui/react";
+import { Box, Flex, Container, Button, Img, Link } from "@chakra-ui/react";
 
 const Navbar: React.FC = () => {
   return (
@@ -22,21 +22,41 @@ const Navbar: React.FC = () => {
           justifyContent={{ xs: "center", sm: "space-between" }}
         >
           <Img src="/assets/logo.png" height={{ sm: "48px" }} />
-          <a href="https://forms.gle/ajG1vV8acTq1gnDX6" target="_blank">
-            <Button
-              display={{ xs: "none", sm: "block" }}
-              borderRadius="3px"
-              height="44px"
-              p="0 25px"
-              color="white"
-              bg="primary"
-              _hover={{
-                bg: "linkedin.300",
-              }}
-            >
-              Register Now
-            </Button>
-          </a>
+          <Flex>
+            <Link href="/contributors">
+              <a>
+                <Button
+                  mr="1rem"
+                  display={{ xs: "none", sm: "block" }}
+                  borderRadius="3px"
+                  height="44px"
+                  p="0 25px"
+                  color="white"
+                  bg="primary"
+                  _hover={{
+                    bg: "linkedin.300",
+                  }}
+                >
+                  Contributors
+                </Button>
+              </a>
+            </Link>
+            <a href="https://bit.ly/LNCT-Hackathon" target="_blank">
+              <Button
+                display={{ xs: "none", sm: "block" }}
+                borderRadius="3px"
+                height="44px"
+                p="0 25px"
+                color="white"
+                bg="primary"
+                _hover={{
+                  bg: "linkedin.300",
+                }}
+              >
+                Register Now
+              </Button>
+            </a>
+          </Flex>
         </Flex>
       </Container>
     </Box>
