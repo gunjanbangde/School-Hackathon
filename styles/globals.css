@@ -36,3 +36,7 @@ button {
     font-size: 14px;
   }
 }
+
+.carousel.carousel-slider .control-arrow:hover {
+  background: none !important;
+}

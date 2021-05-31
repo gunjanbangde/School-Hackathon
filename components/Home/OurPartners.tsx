@@ -28,10 +28,15 @@ const OurPartners: React.FC = () => {
           flexDirection="column"
         >
           <Reveal>
-            <Text color="white" fontWeight="700" fontSize="5xl" mb="1rem">
+            <Text
+              color="white"
+              fontWeight="700"
+              fontSize={{ xs: "4xl", md: "5xl" }}
+              mb="1rem"
+            >
               ABOUT LNCT GROUP
             </Text>
-            <Text fontSize="2xl" color="white" mb="3rem">
+            <Text fontSize={{ xs: "1xl", md: "2xl" }} color="white" mb="3rem">
               LNCT Group of Colleges is ones of the oldest and largest education
               groups in central India. Founded in 1994 Lakshmi Narain College of
               Technology, Bhopal has the privilege of being the First Private
@@ -72,73 +77,75 @@ const OurPartners: React.FC = () => {
               <Img my="auto" width="100%" src="/assets/logo.png" />
             </Reveal>
           </SimpleGrid>
-          <Table
-            mt="2rem"
-            color="white"
-            border="solid 1px #fff"
-            borderRadius="4px"
-            variant="simple"
-          >
-            <Tbody>
-              <Tr>
-                <Td borderTopLeftRadius="4px" border="solid 1px white">
-                  Chief Patron
-                </Td>
-                <Td border="solid 1px white">
-                  Shri J.N. Chouksey ,Chairman, LNCT Group
-                </Td>
-              </Tr>
-              <Tr>
-                <Td border="solid 1px white">Patron(s)</Td>
-                <Td border="solid 1px white">
-                  Dr. Anupam Chouksey, Secretary, LNCT Group
-                </Td>
-              </Tr>
-              <Tr>
-                <Td border="solid 1px white">Convener</Td>
-                <Td border="solid 1px white">
-                  Dr. Ashok Kumar Rai, Director Administration
-                </Td>
-              </Tr>
-              <Tr>
-                <Td border="solid 1px white">SPOC</Td>
-                <Td border="solid 1px white">Dr. Vivek Richhariya</Td>
-              </Tr>
-              <Tr>
-                <Td border="solid 1px white">Organizing Member</Td>
-                <Td border="solid 1px white">
-                  <Text>Dr. Vineet Richhariya</Text>
-                  <br />
-                  <Text>Dr. Bhupesh Gour</Text>
-                  <br /> Dr. Anoop Chaturvedi
-                </Td>
-              </Tr>
-              <Tr>
-                <Td border="solid 1px white">Technical Committee</Td>
-                <Td border="solid 1px white">
-                  <Text>Prof Alka Gulati</Text>
-                  <br />
-                  <Text>Dr. Aparna Gupta</Text>
-                  <br />
-                  <Text>Prof Naveen Asathi</Text>
-                  <br />
-                  <Text>Prof Bhawna Pillai</Text>
-                  <br />
-                  <Text>Dr. Tripti Saxena</Text>
-                  <br />
-                  <Text>Prof Megha Jain</Text>
-                  <br />
-                  <Text>Prof Harendra Singh</Text>
-                  <br />
-                  <Text>Prof. Shraddha Shrivastava</Text>
-                  <br />
-                  <Text>Prof Prakhar </Text>
-                  <br />
-                  <Text>Prof Sachin Nikkam</Text>
-                </Td>
-              </Tr>
-            </Tbody>
-          </Table>
+          <Reveal>
+            <Table
+              mt="2rem"
+              color="white"
+              border="solid 1px #fff"
+              borderRadius="4px"
+              variant="simple"
+            >
+              <Tbody>
+                <Tr>
+                  <Td borderTopLeftRadius="4px" border="solid 1px white">
+                    Chief Patron
+                  </Td>
+                  <Td border="solid 1px white">
+                    Shri J.N. Chouksey ,Chairman, LNCT Group
+                  </Td>
+                </Tr>
+                <Tr>
+                  <Td border="solid 1px white">Patron(s)</Td>
+                  <Td border="solid 1px white">
+                    Dr. Anupam Chouksey, Secretary, LNCT Group
+                  </Td>
+                </Tr>
+                <Tr>
+                  <Td border="solid 1px white">Convener</Td>
+                  <Td border="solid 1px white">
+                    Dr. Ashok Kumar Rai, Director Administration
+                  </Td>
+                </Tr>
+                <Tr>
+                  <Td border="solid 1px white">SPOC</Td>
+                  <Td border="solid 1px white">Dr. Vivek Richhariya</Td>
+                </Tr>
+                <Tr>
+                  <Td border="solid 1px white">Organizing Member</Td>
+                  <Td border="solid 1px white">
+                    <Text>Dr. Vineet Richhariya</Text>
+                    <br />
+                    <Text>Dr. Bhupesh Gour</Text>
+                    <br /> Dr. Anoop Chaturvedi
+                  </Td>
+                </Tr>
+                <Tr>
+                  <Td border="solid 1px white">Technical Committee</Td>
+                  <Td border="solid 1px white">
+                    <Text>Prof Alka Gulati</Text>
+                    <br />
+                    <Text>Dr. Aparna Gupta</Text>
+                    <br />
+                    <Text>Prof Naveen Asathi</Text>
+                    <br />
+                    <Text>Prof Bhawna Pillai</Text>
+                    <br />
+                    <Text>Dr. Tripti Saxena</Text>
+                    <br />
+                    <Text>Prof Megha Jain</Text>
+                    <br />
+                    <Text>Prof Harendra Singh</Text>
+                    <br />
+                    <Text>Prof. Shraddha Shrivastava</Text>
+                    <br />
+                    <Text>Prof Prakhar </Text>
+                    <br />
+                    <Text>Prof Sachin Nikkam</Text>
+                  </Td>
+                </Tr>
+              </Tbody>
+            </Table>
+          </Reveal>
         </Flex>
       </Container>
     </Box>

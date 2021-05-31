@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import {
   Box,
   Flex,
@@ -13,7 +13,7 @@ import { GiGears } from "react-icons/gi";
 import { IoEarthSharp } from "react-icons/io5";
 import Lottie from "react-lottie";
 
-import Reveal from "../library/Reveal";
+import Reveal, { MotionBox } from "../library/Reveal";
 import animationData from "@/public/assets/why_lottie.json";
 import ThemeCarousel from "./Carousel";
 
@@ -27,7 +27,14 @@ const WhyJoin: React.FC = () => {
     },
   };
 
-  const themeData = [
+  const [index, setIndex] = useState(0);
+  const [themeData, setThemeData] = useState([""]);
+
+  useEffect(() => {
+    setThemeData(data[index]);
+  }, [index]);
+
+  const data = [
     [
       "Irrigation",
       "Water conservation",
@@ -35,6 +42,22 @@ const WhyJoin: React.FC = () => {
       "Water purifiers for purifying the flowing water in the lakes",
       "Low cost equipment to use in agricultural applications",
     ],
+    [
+      "Virtual Assistant for Medical Device",
+      "Primary health care in remote areas using Cloud medicine and Diagnostic Services",
+      "Early prediction of lifestyle diseases",
+      "Fabrication of mask with low cost materials",
+    ],
+    [
+      "Food processing",
+      "Security & surveillance",
+      "Drone for spraying fertilizers",
+      "Smart communication devices to use in rural areas",
+      "Smart Vehicle",
+    ],
+    ["Solar energy", "Wind energy", "Biomass energy"],
+    ["Waste collection", "Waste transportation", "Waste disposal"],
+    ["Open"],
   ];
 
   return (
@@ -137,26 +160,44 @@ const WhyJoin: React.FC = () => {
             </Flex>
           </Box>
         </Flex>
-        <Text
-          textAlign="center"
-          fontSize="5xl"
-          fontWeight="700"
-          my="2rem"
-          color="white"
+        <Reveal>
+          <Text
+            textAlign="center"
+            fontSize="5xl"
+            fontWeight="700"
+            mt="2rem"
+            mb={{ xs: "0", md: "2rem" }}
+            color="white"
+          >
+            Themes
+          </Text>
+        </Reveal>
+        <Flex
+          flexDirection={{ xs: "column-reverse", md: "row" }}
+          pl={{ md: "2rem" }}
         >
-          Themes
-        </Text>
-        <Flex pl="2rem">
-          <Box width="45%">
-            <UnorderedList color="white" fontSize="2xl">
-              {themeData[0].map((data, i) => (
-                <ListItem key={i}>{data}</ListItem>
-              ))}
-            </UnorderedList>
-          </Box>
-          <Box width="55%">
-            <ThemeCarousel />
-          </Box>
+          <Reveal>
+            <MotionBox
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              key={index}
+              width={{ xs: "100%", md: "45%" }}
+              minHeight="200px"
+            >
+              <UnorderedList color="white" fontSize="2xl">
+                {themeData.map((data, i) => (
+                  <ListItem key={i}>{data}</ListItem>
+                ))}
+              </UnorderedList>
+            </MotionBox>
+          </Reveal>
+          <Reveal
+            right
+            mb={{ xs: "2rem", md: "0" }}
+            width={{ xs: "100%", md: "55%" }}
+          >
+            <ThemeCarousel index={index} setIndex={setIndex} />
+          </Reveal>
         </Flex>
       </Container>
     </Box>

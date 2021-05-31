@@ -45,4 +45,4 @@ const Reveal: React.FC<Props> = (props) => {
 
 export default Reveal;
 
-const MotionBox = motion(Box);
+export const MotionBox = motion(Box);

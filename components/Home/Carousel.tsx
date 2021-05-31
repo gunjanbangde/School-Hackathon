@@ -1,28 +1,15 @@
 import React from "react";
-import Carousel from "react-multi-carousel";
-import "react-multi-carousel/lib/styles.css";
+import { Carousel } from "react-responsive-carousel";
+import "react-responsive-carousel/lib/styles/carousel.min.css";
 
 import { Flex, Img, Box, Text } from "@chakra-ui/react";
 
-const ThemeCarousel: React.FC = () => {
-  const responsive = {
-    desktop: {
-      breakpoint: { max: 3000, min: 1024 },
-      items: 1,
-      paritialVisibilityGutter: 0,
-    },
-    tablet: {
-      breakpoint: { max: 1024, min: 464 },
-      items: 1,
-      paritialVisibilityGutter: 0,
-    },
-    mobile: {
-      breakpoint: { max: 464, min: 0 },
-      items: 1,
-      paritialVisibilityGutter: 0,
-    },
-  };
+type Props = {
+  setIndex: React.Dispatch<React.SetStateAction<number>>;
+  index: number;
+};
 
+const ThemeCarousel: React.FC<Props> = ({ setIndex, index }) => {
   const carouselData = [
     {
       text: "Agricultural and Rural Development",
@@ -53,20 +40,13 @@ const ThemeCarousel: React.FC = () => {
   return (
     <Box mt="2rem" height="80%" width="100%">
       <Carousel
-        swipeable={false}
-        draggable={false}
-        showDots={true}
-        responsive={responsive}
-        customDot={<CustomDot />}
-        ssr={true}
-        infinite={true}
-        autoPlaySpeed={1000}
-        keyBoardControl={true}
-        customTransition="all .5"
-        transitionDuration={500}
-        containerClass="carousel-container"
-        removeArrowOnDeviceType={["tablet", "mobile"]}
-        itemClass="carousel-item-padding-40-px"
+        className="carousel-wrapper"
+        showStatus={false}
+        showThumbs={false}
+        infiniteLoop={true}
+        onChange={(props) => setIndex(props)}
+        selectedItem={index}
+        showArrows={true}
       >
         {carouselData.map((item) => (
           <Flex
@@ -86,31 +66,6 @@ const ThemeCarousel: React.FC = () => {
       </Carousel>
     </Box>
   );
-};
-
-const CustomDot = (props: { [x: string]: any }) => {
-  if (props.active) {
-    return (
-      <Box
-        width="10px"
-        mr="1rem"
-        height="10px"
-        bg="white"
-        borderRadius="50%"
-        border="solid 1px #fff"
-      />
-    );
-  } else {
-    return (
-      <Box
-        width="10px"
-        mr="1rem"
-        height="10px"
-        borderRadius="50%"
-        border="solid 1px #fff"
-      />
-    );
-  }
 };
 
 export default ThemeCarousel;
