@@ -48,7 +48,12 @@ const Navbar: React.FC = () => {
           justifyContent="space-between"
         >
           <a href="https://lnct.ac.in/" target="_blank">
-            <Img src="/assets/logo.png" height={{ xs: "58px", sm: "48px" }} />
+            <Img
+              src="/assets/logo.png"
+              maxHeight="100%"
+              width={{ xs: "136px", sm: "163px" }}
+              // height={{ xs: "100%", sm: "80%" }}
+            />
           </a>
           <Flex display={{ xs: "none", sm: "flex" }} align="center">
             <Link href="/">
@@ -61,6 +66,7 @@ const Navbar: React.FC = () => {
                       ? "none"
                       : "underline",
                   }}
+                  textUnderlineOffset="4px"
                   height="44px"
                   fontSize="2xl"
                   color="primary"
@@ -80,6 +86,7 @@ const Navbar: React.FC = () => {
                       ? "underline"
                       : "none",
                   }}
+                  textUnderlineOffset="4px"
                   height="44px"
                   fontSize="2xl"
                   p="0 25px"
@@ -138,6 +145,7 @@ const Navbar: React.FC = () => {
                           ? "none"
                           : "underline",
                       }}
+                      textUnderlineOffset="4px"
                       mt="0.5rem"
                       height="44px"
                       fontSize="2xl"
@@ -156,6 +164,7 @@ const Navbar: React.FC = () => {
                           ? "underline"
                           : "none",
                       }}
+                      textUnderlineOffset="4px"
                       mt="0.5rem"
                       height="44px"
                       fontSize="2xl"
