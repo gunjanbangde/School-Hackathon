@@ -12,7 +12,6 @@ import {
   DrawerHeader,
   DrawerOverlay,
   DrawerContent,
-  DrawerCloseButton,
   useDisclosure,
 } from "@chakra-ui/react";
 import { useRouter } from "next/dist/client/router";
@@ -104,6 +103,7 @@ const Navbar: React.FC = () => {
             </a>
           </Flex>
           <IconButton
+            aria-label="Open Navbar"
             onClick={onOpen}
             icon={<GiHamburgerMenu />}
             bg="primary"
@@ -118,6 +118,7 @@ const Navbar: React.FC = () => {
                 borderBottomWidth="1px"
               >
                 <IconButton
+                  aria-label="Close Navbar"
                   onClick={onClose}
                   icon={<IoCloseSharp />}
                   bg="primary"
