@@ -12,6 +12,21 @@ const Layout: React.FC = ({ children }: Props) => (
   <>
     <Head>
       <title>LNCT Hackathon</title>
+      <meta
+        name="description"
+        content="National Level Virtual Hackathon organized by LNCT Group of Colleges"
+      />
+      <meta property="og:title" content="LNCT Hackathon" />
+      <meta
+        property="og:description"
+        content="National Level Virtual Hackathon organized by LNCT Group of Colleges"
+      />
+      <meta
+        property="og:image"
+        content="https://lnct-hackathon.vercel.app/assets/Hackathon%20Club%20Logo.png"
+      />
+      <meta property="og:url" content="https://lnct-hackathon.vercel.app/" />
+      <meta property="og:site_name" content="LNCT Hackathon" />
       <link
         rel="apple-touch-icon"
         sizes="180x180"
