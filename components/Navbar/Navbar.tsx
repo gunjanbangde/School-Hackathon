@@ -52,7 +52,6 @@ const Navbar: React.FC = () => {
               src="/assets/logo.png"
               maxHeight="100%"
               width={{ xs: "136px", sm: "163px" }}
-              // height={{ xs: "100%", sm: "80%" }}
             />
           </a>
           <Flex display={{ xs: "none", sm: "flex" }} align="center">
@@ -96,6 +95,21 @@ const Navbar: React.FC = () => {
                 </Text>
               </a>
             </Link>
+            <a href="https://lnct.ac.in/" target="_blank">
+              <Button
+                mr="1rem"
+                borderRadius="3px"
+                height="44px"
+                p="0 25px"
+                color="white"
+                bg="primary"
+                _hover={{
+                  bg: "linkedin.300",
+                }}
+              >
+                About Us
+              </Button>
+            </a>
             <a href="https://bit.ly/LNCT-Hackathon" target="_blank">
               <Button
                 borderRadius="3px"
@@ -135,7 +149,7 @@ const Navbar: React.FC = () => {
                   color="white"
                 />
               </DrawerHeader>
-              <DrawerBody>
+              <DrawerBody display="flex" flexDirection="column">
                 <Link href="/">
                   <a>
                     <Text
@@ -174,11 +188,30 @@ const Navbar: React.FC = () => {
                     </Text>
                   </a>
                 </Link>
+                <a href="https://lnct.ac.in/" target="_blank">
+                  <Button
+                    mr="1rem"
+                    borderRadius="3px"
+                    height="44px"
+                    p="0 25px"
+                    mb="1rem"
+                    width="150px"
+                    color="white"
+                    bg="primary"
+                    _hover={{
+                      bg: "linkedin.300",
+                    }}
+                  >
+                    About Us
+                  </Button>
+                </a>
                 <a href="https://bit.ly/LNCT-Hackathon" target="_blank">
                   <Button
                     borderRadius="3px"
                     height="44px"
                     p="0 25px"
+                    mb="1rem"
+                    width="150px"
                     color="white"
                     bg="primary"
                     _hover={{

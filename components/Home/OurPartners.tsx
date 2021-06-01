@@ -25,7 +25,12 @@ const OurPartners: React.FC = () => {
             >
               ABOUT LNCT GROUP
             </Text>
-            <Text fontSize={{ xs: "1xl", md: "2xl" }} color="white" mb="3rem">
+            <Text
+              textAlign="justify"
+              fontSize={{ xs: "1xl", md: "2xl" }}
+              color="white"
+              mb="3rem"
+            >
               LNCT Group of Colleges is ones of the oldest and largest education
               groups in central India. Founded in 1994 Lakshmi Narain College of
               Technology, Bhopal has the privilege of being the First Private
