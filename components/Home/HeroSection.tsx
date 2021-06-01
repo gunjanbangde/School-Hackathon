@@ -100,8 +100,8 @@ const HeroSection: React.FC = () => {
                 >
                   Hackathon Club is going to start a new initiative to provide
                   student’s platform to solve some of the pressing problem
-                  statements related to real life under an event “National Level
-                  Hackathon – 2021 Version 1.0”
+                  statements related to real life under an event “National
+                  Virtual Level Hackathon – 2021 Version 1.0”
                 </Text>
               </Box>
             </Reveal>
