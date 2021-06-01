@@ -28,7 +28,8 @@ const Contact: React.FC = () => {
               Organized By
             </Text>
           </Reveal>
-          <Flex
+          <Reveal
+            display="flex"
             mb="1rem"
             width={{ xs: "90%", lg: "50%" }}
             alignItems="center"
@@ -36,8 +37,8 @@ const Contact: React.FC = () => {
             justifyContent="center"
           >
             <Img src="/assets/club.jpeg" />
-          </Flex>
-          <Flex mb="3rem">
+          </Reveal>
+          <Reveal mb="3rem">
             <a
               href="https://www.facebook.com/lncthackathonclub"
               target="_blank"
@@ -92,13 +93,14 @@ const Contact: React.FC = () => {
                 as={HiOutlineMail}
               />
             </a>
-          </Flex>
+          </Reveal>
           <Reveal>
             <Text color="primary" fontWeight="700" fontSize="5xl" mb="1rem">
               Contact Us
             </Text>
           </Reveal>
-          <Flex
+          <Reveal
+            display="flex"
             alignItems="center"
             direction={{ xs: "column", md: "row" }}
             justifyContent="center"
@@ -191,7 +193,7 @@ const Contact: React.FC = () => {
                 </a>
               </Flex>
             </Flex>
-          </Flex>
+          </Reveal>
         </Flex>
       </Container>
     </Box>
