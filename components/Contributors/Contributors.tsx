@@ -114,6 +114,19 @@ const HeroSection: React.FC = () => {
               </Tbody>
             </Table>
           </Reveal>
+          <Reveal left>
+            <Text
+              as="h1"
+              mt="3rem"
+              fontSize={{ xs: "4xl", lg: "5xl" }}
+              fontWeight="700"
+              textAlign="center"
+              color="primary"
+              lineHeight="1.1"
+            >
+              Student Coordinators
+            </Text>
+          </Reveal>
           <Reveal width="95%">
             <Table
               mt="2rem"
