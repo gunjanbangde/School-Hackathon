@@ -103,7 +103,7 @@ const Navbar: React.FC = () => {
             </a>
           </Flex>
           <IconButton
-            display={{ xs: "block", sm: "none" }}
+            display={{ xs: "flex", sm: "none" }}
             aria-label="Open Navbar"
             onClick={onOpen}
             icon={<GiHamburgerMenu />}
