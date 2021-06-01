@@ -1,5 +1,6 @@
 import React from "react";
 import { Box, Flex, Text, Container, Button } from "@chakra-ui/react";
+import ReactPlayer from "react-player";
 
 import Reveal from "../library/Reveal";
 
@@ -16,6 +17,38 @@ const OurPartners: React.FC = () => {
           justifyContent="center"
           flexDirection="column"
         >
+          <Reveal
+            flexDirection={{ xs: "column-reverse", sm: "row" }}
+            width="100%"
+            mb="2rem"
+            display="flex"
+          >
+            <Box
+              width={{ xs: "345px", sm: "633px" }}
+              maxWidth="100%"
+              height={{ xs: "184px", lg: "348px" }}
+            >
+              <ReactPlayer
+                width="100%"
+                height="100%"
+                controls
+                url="/assets/Hackathon Intro for Website.mp4"
+              />
+            </Box>
+            <Text
+              mb={{ xs: "2rem", sm: "0" }}
+              ml={{ sm: "2rem" }}
+              color="white"
+              as="h1"
+              fontSize={{ xs: "4xl", lg: "5xl" }}
+              fontWeight="700"
+            >
+              About Virtual
+              <br /> Hackathon - 2021
+              <br />
+              Version 1.0
+            </Text>
+          </Reveal>
           <Reveal>
             <Text
               color="white"
