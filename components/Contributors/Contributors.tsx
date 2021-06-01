@@ -97,9 +97,9 @@ const HeroSection: React.FC = () => {
                       <Text>Prof Megha Jain</Text>
                       <Text>Prof Harendra Singh</Text>
                       <Text>Prof. Vishw Gupta</Text>
-                      <Text>Prof. Kamlesh</Text>
+                      <Text>Prof. Kamlesh Chandravanshi</Text>
                       <Text>Prof. Shraddha Shrivastava</Text>
-                      <Text>Prof Prakhar </Text>
+                      <Text>Prof. Prakhar Bhadauriya</Text>
                       <Text>Prof Sachin Nikkam</Text>
                       <Text>Dr. Guarav Jain</Text>
                       <Text>Prof. Rohit Singh</Text>
@@ -107,7 +107,7 @@ const HeroSection: React.FC = () => {
                       <Text>Prof. Gaurav Nayak</Text>
                       <Text>Prof. Prashant Chaturvedi</Text>
                       <Text>Prof. Mohd. Monis Khan</Text>
-                      <Text>Prof. Juji Nigam</Text>
+                      <Text>Prof. Juhi Nigam</Text>
                     </SimpleGrid>
                   </Td>
                 </Tr>

@@ -1,6 +1,15 @@
 import React from "react";
-import { Box, Flex, Text, Container, Avatar, Icon } from "@chakra-ui/react";
+import {
+  Box,
+  Flex,
+  Text,
+  Container,
+  Avatar,
+  Icon,
+  Img,
+} from "@chakra-ui/react";
 import { HiOutlineMail } from "react-icons/hi";
+import { FiFacebook, FiInstagram, FiGlobe } from "react-icons/fi";
 import { AiOutlinePhone } from "react-icons/ai";
 
 import Reveal from "../library/Reveal";
@@ -14,6 +23,76 @@ const Contact: React.FC = () => {
           justifyContent="center"
           flexDirection="column"
         >
+          <Reveal>
+            <Text color="primary" fontWeight="700" fontSize="5xl" mb="1rem">
+              Organized By
+            </Text>
+          </Reveal>
+          <Flex
+            mb="1rem"
+            width={{ xs: "90%", lg: "50%" }}
+            alignItems="center"
+            direction={{ xs: "column", md: "row" }}
+            justifyContent="center"
+          >
+            <Img src="/assets/club.jpeg" />
+          </Flex>
+          <Flex mb="3rem">
+            <a
+              href="https://www.facebook.com/lncthackathonclub"
+              target="_blank"
+            >
+              <Icon
+                ml="1rem"
+                bg="primary"
+                color="white"
+                p="2"
+                width={12}
+                height={12}
+                borderRadius="50%"
+                as={FiFacebook}
+              />
+            </a>
+            <a
+              href="https://www.instagram.com/lncthackathonclub/"
+              target="_blank"
+            >
+              <Icon
+                ml="1rem"
+                bg="primary"
+                color="white"
+                p="2"
+                width={12}
+                height={12}
+                borderRadius="50%"
+                as={FiInstagram}
+              />
+            </a>
+            <a href="https://lnct.ac.in/" target="_blank">
+              <Icon
+                ml="1rem"
+                bg="primary"
+                color="white"
+                p="2"
+                width={12}
+                height={12}
+                borderRadius="50%"
+                as={FiGlobe}
+              />
+            </a>
+            <a href="mailto:hackathon@lnct.ac.in">
+              <Icon
+                ml="1rem"
+                bg="primary"
+                color="white"
+                p="2"
+                width={12}
+                height={12}
+                borderRadius="50%"
+                as={HiOutlineMail}
+              />
+            </a>
+          </Flex>
           <Reveal>
             <Text color="primary" fontWeight="700" fontSize="5xl" mb="1rem">
               Contact Us

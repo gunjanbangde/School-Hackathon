@@ -27,7 +27,7 @@ const HeroSection: React.FC = () => {
       alignItems="center"
       height={{ lg: "100vh" }}
       width="100%"
-      p={{ xs: "80px 0 60px", sm: "180px 0 130px" }}
+      p={{ xs: "80px 0 60px", sm: "140px 0 130px" }}
     >
       <Container maxWidth="1440px" px={{ xs: "20px", lg: "80px" }}>
         <Flex
@@ -35,16 +35,23 @@ const HeroSection: React.FC = () => {
           flexDirection={{ xs: "column-reverse", lg: "row" }}
         >
           <Box width={{ lg: "41%" }}>
-            <Reveal left>
+            <Reveal
+              display="flex"
+              flexDirection={{ xs: "column-reverse", lg: "column" }}
+              left
+            >
               <SimpleGrid
                 mt="1rem"
                 mb="2rem"
-                width={{ xs: "90%", md: "70%", lg: "100%" }}
-                columns={{ xs: 2, sm: 4 }}
+                width={{ xs: "90%", md: "70%", lg: "140%" }}
+                columns={{ xs: 2, sm: 6 }}
                 spacing={{ xs: 10, lg: 5 }}
               >
                 <Reveal>
                   <Img my="auto" width="100%" src="/assets/NBA.png" />
+                </Reveal>
+                <Reveal>
+                  <Img my="auto" width="100%" src="/assets/logo.png" />
                 </Reveal>
                 <Reveal>
                   <Img my="auto" width="100%" src="/assets/25.png" />
@@ -53,30 +60,51 @@ const HeroSection: React.FC = () => {
                   <Img my="auto" width="100%" src="/assets/nirf.jpg" />
                 </Reveal>
                 <Reveal>
+                  <Img
+                    my="auto"
+                    width="100%"
+                    src="/assets/Hackathon Club Logo.png"
+                  />
+                </Reveal>
+                <Reveal>
                   <Img my="auto" width="100%" src="/assets/IIC.png" />
                 </Reveal>
               </SimpleGrid>
-              <Text
-                as="h1"
-                mb={{ xs: "1rem", lg: "3rem" }}
-                fontSize={{ xs: "4xl", lg: "5xl" }}
-                fontWeight="700"
-                textAlign={{ xs: "center", lg: "left" }}
-                color="primary"
-                lineHeight="1.1"
-              >
-                LNCT Group of Colleges present, National Level Virtual Hackathon
-              </Text>
-              <Text
-                textAlign={{ xs: "center", lg: "left" }}
-                color="#14213d"
-                mb="1rem"
-              >
-                Hackathon Club is going to start a new initiative to provide
-                student’s platform to solve some of the pressing problem
-                statements related to real life under an event “National Level
-                Hackathon – 2021 Version 1.0”
-              </Text>
+              <Box>
+                <Text
+                  as="h1"
+                  fontSize={{ xs: "2xl", lg: "3xl" }}
+                  fontWeight="700"
+                  textAlign={{ xs: "center", lg: "left" }}
+                  color="primary"
+                  lineHeight="1.1"
+                >
+                  LNCT Group of
+                  <br /> Colleges present,
+                </Text>
+                <Text
+                  as="h1"
+                  fontSize={{ xs: "4xl", lg: "5xl" }}
+                  fontWeight="700"
+                  textAlign={{ xs: "center", lg: "left" }}
+                  color="primary"
+                  lineHeight="1.2"
+                  mb={{ xs: "1rem", lg: "3rem" }}
+                >
+                  National Level Virtual Hackathon - 2021
+                  <br /> Version 1.0
+                </Text>
+                <Text
+                  textAlign={{ xs: "center", lg: "left" }}
+                  color="#14213d"
+                  mb="1rem"
+                >
+                  Hackathon Club is going to start a new initiative to provide
+                  student’s platform to solve some of the pressing problem
+                  statements related to real life under an event “National Level
+                  Hackathon – 2021 Version 1.0”
+                </Text>
+              </Box>
             </Reveal>
             <Reveal
               d="flex"
