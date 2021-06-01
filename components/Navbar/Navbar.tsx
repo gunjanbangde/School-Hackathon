@@ -48,7 +48,7 @@ const Navbar: React.FC = () => {
           justifyContent="space-between"
         >
           <Img src="/assets/logo.png" height={{ sm: "48px" }} />
-          <Flex display={{ xs: "none", sm: "block" }} align="center">
+          <Flex display={{ xs: "none", sm: "flex" }} align="center">
             <Link href="/">
               <a>
                 <Text
@@ -103,6 +103,7 @@ const Navbar: React.FC = () => {
             </a>
           </Flex>
           <IconButton
+            display={{ xs: "block", sm: "none" }}
             aria-label="Open Navbar"
             onClick={onOpen}
             icon={<GiHamburgerMenu />}
