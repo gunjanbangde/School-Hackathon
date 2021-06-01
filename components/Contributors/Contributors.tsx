@@ -34,7 +34,7 @@ const HeroSection: React.FC = () => {
               Our Contributors
             </Text>
           </Reveal>
-          <Reveal>
+          <Reveal width="95%">
             <Table
               mt="2rem"
               color="primary"
@@ -108,6 +108,70 @@ const HeroSection: React.FC = () => {
                       <Text>Prof. Prashant Chaturvedi</Text>
                       <Text>Prof. Mohd. Monis Khan</Text>
                       <Text>Prof. Juhi Nigam</Text>
+                    </SimpleGrid>
+                  </Td>
+                </Tr>
+              </Tbody>
+            </Table>
+          </Reveal>
+          <Reveal width="95%">
+            <Table
+              mt="2rem"
+              color="primary"
+              border="solid 1px #390099"
+              borderRadius="4px"
+              variant="simple"
+            >
+              <Tbody>
+                <Tr>
+                  <Td borderTopLeftRadius="4px" border="solid 1px #390099">
+                    Technical Committee
+                  </Td>
+                  <Td border="solid 1px #390099">
+                    <SimpleGrid
+                      columns={{ xs: 1, sm: 4 }}
+                      spacing={{ xs: 5, lg: 5 }}
+                    >
+                      <Text>Diksha Akankshi</Text>
+                      <Text>Nancy Sahu</Text>
+                      <Text>Somya Sahu</Text>
+                      <Text>Vinay Pandey</Text>
+                      <Text>Mobassir</Text>
+                      <Text>Chikku</Text>{" "}
+                    </SimpleGrid>
+                  </Td>
+                </Tr>
+                <Tr>
+                  <Td borderTopLeftRadius="4px" border="solid 1px #390099">
+                    Organizing Committee
+                  </Td>
+                  <Td border="solid 1px #390099">
+                    <SimpleGrid
+                      columns={{ xs: 1, sm: 4 }}
+                      spacing={{ xs: 5, lg: 5 }}
+                    >
+                      <Text>Uttam Kumar</Text>
+                      <Text>Athrava Srivastava</Text>
+                      <Text>Ranveer Raj</Text>
+                      <Text>Yashraj Pany</Text>{" "}
+                    </SimpleGrid>
+                  </Td>
+                </Tr>
+                <Tr>
+                  <Td borderTopLeftRadius="4px" border="solid 1px #390099">
+                    Promotion Committee
+                  </Td>
+                  <Td border="solid 1px #390099">
+                    <SimpleGrid
+                      columns={{ xs: 1, sm: 4 }}
+                      spacing={{ xs: 5, lg: 5 }}
+                    >
+                      <Text>Anjali Parihar</Text>
+                      <Text>Gunjan Bangde</Text>
+                      <Text>Shreysi Swaraj</Text>
+                      <Text>Shreyansh Sharma</Text>
+                      <Text>Aditya Sharma</Text>
+                      <Text>Soumya Jain</Text>{" "}
                     </SimpleGrid>
                   </Td>
                 </Tr>
