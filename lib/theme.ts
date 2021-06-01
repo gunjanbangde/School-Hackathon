@@ -25,6 +25,7 @@ export const theme = extendTheme({
   breakpoints,
   components: {
     Button: { baseStyle: { _focus: { boxShadow: "none", outline: "none" } } },
+    Text: { baseStyle: { _focus: { boxShadow: "none", outline: "none" } } },
   },
 });
 

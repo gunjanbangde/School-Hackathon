@@ -1,7 +1,34 @@
-import React from "react";
-import { Box, Flex, Container, Button, Img, Link } from "@chakra-ui/react";
+import React, { useState, useEffect } from "react";
+import {
+  Box,
+  Flex,
+  Container,
+  Button,
+  Img,
+  Text,
+  Drawer,
+  DrawerBody,
+  IconButton,
+  DrawerHeader,
+  DrawerOverlay,
+  DrawerContent,
+  DrawerCloseButton,
+  useDisclosure,
+} from "@chakra-ui/react";
+import { useRouter } from "next/dist/client/router";
+import Link from "next/link";
+import { GiHamburgerMenu } from "react-icons/gi";
+import { IoCloseSharp } from "react-icons/io5";
 
 const Navbar: React.FC = () => {
+  const [page, setPage] = useState("");
+  const { isOpen, onOpen, onClose } = useDisclosure();
+  const router = useRouter();
+
+  useEffect(() => {
+    setPage(router.pathname);
+  }, [router.pathname]);
+
   return (
     <Box
       position="fixed"
@@ -19,31 +46,50 @@ const Navbar: React.FC = () => {
           width="100%"
           height="100%"
           alignItems="center"
-          justifyContent={{ xs: "center", sm: "space-between" }}
+          justifyContent="space-between"
         >
           <Img src="/assets/logo.png" height={{ sm: "48px" }} />
-          <Flex>
+          <Flex display={{ xs: "none", sm: "block" }} align="center">
+            <Link href="/">
+              <a>
+                <Text
+                  borderRadius="3px"
+                  mt="0.5rem"
+                  sx={{
+                    textDecoration: page.includes("contributors")
+                      ? "none"
+                      : "underline",
+                  }}
+                  height="44px"
+                  fontSize="2xl"
+                  color="primary"
+                >
+                  Home
+                </Text>
+              </a>
+            </Link>
             <Link href="/contributors">
               <a>
-                <Button
-                  mr="1rem"
-                  display={{ xs: "none", sm: "block" }}
+                <Text
+                  mx="1rem"
                   borderRadius="3px"
-                  height="44px"
-                  p="0 25px"
-                  color="white"
-                  bg="primary"
-                  _hover={{
-                    bg: "linkedin.300",
+                  mt="0.5rem"
+                  sx={{
+                    textDecoration: page.includes("contributors")
+                      ? "underline"
+                      : "none",
                   }}
+                  height="44px"
+                  fontSize="2xl"
+                  p="0 25px"
+                  color="primary"
                 >
                   Contributors
-                </Button>
+                </Text>
               </a>
             </Link>
             <a href="https://bit.ly/LNCT-Hackathon" target="_blank">
               <Button
-                display={{ xs: "none", sm: "block" }}
                 borderRadius="3px"
                 height="44px"
                 p="0 25px"
@@ -57,6 +103,81 @@ const Navbar: React.FC = () => {
               </Button>
             </a>
           </Flex>
+          <IconButton
+            onClick={onOpen}
+            icon={<GiHamburgerMenu />}
+            bg="primary"
+            color="white"
+          />
+          <Drawer placement="top" onClose={onClose} isOpen={isOpen}>
+            <DrawerOverlay />
+            <DrawerContent>
+              <DrawerHeader
+                display="flex"
+                justifyContent="flex-end"
+                borderBottomWidth="1px"
+              >
+                <IconButton
+                  onClick={onClose}
+                  icon={<IoCloseSharp />}
+                  bg="primary"
+                  color="white"
+                />
+              </DrawerHeader>
+              <DrawerBody>
+                <Link href="/">
+                  <a>
+                    <Text
+                      borderRadius="3px"
+                      sx={{
+                        textDecoration: page.includes("contributors")
+                          ? "none"
+                          : "underline",
+                      }}
+                      mt="0.5rem"
+                      height="44px"
+                      fontSize="2xl"
+                      color="primary"
+                    >
+                      Home
+                    </Text>
+                  </a>
+                </Link>
+                <Link href="/contributors">
+                  <a>
+                    <Text
+                      borderRadius="3px"
+                      sx={{
+                        textDecoration: page.includes("contributors")
+                          ? "underline"
+                          : "none",
+                      }}
+                      mt="0.5rem"
+                      height="44px"
+                      fontSize="2xl"
+                      color="primary"
+                    >
+                      Contributors
+                    </Text>
+                  </a>
+                </Link>
+                <a href="https://bit.ly/LNCT-Hackathon" target="_blank">
+                  <Button
+                    borderRadius="3px"
+                    height="44px"
+                    p="0 25px"
+                    color="white"
+                    bg="primary"
+                    _hover={{
+                      bg: "linkedin.300",
+                    }}
+                  >
+                    Register Now
+                  </Button>
+                </a>
+              </DrawerBody>
+            </DrawerContent>
+          </Drawer>
         </Flex>
       </Container>
     </Box>
