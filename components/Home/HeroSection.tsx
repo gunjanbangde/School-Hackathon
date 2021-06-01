@@ -79,8 +79,7 @@ const HeroSection: React.FC = () => {
                   color="primary"
                   lineHeight="1.1"
                 >
-                  LNCT Group of
-                  <br /> Colleges present,
+                  LNCT Group of Colleges present,
                 </Text>
                 <Text
                   as="h1"

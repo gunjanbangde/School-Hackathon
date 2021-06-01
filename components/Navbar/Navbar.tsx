@@ -48,7 +48,7 @@ const Navbar: React.FC = () => {
           justifyContent="space-between"
         >
           <a href="https://lnct.ac.in/" target="_blank">
-            <Img src="/assets/logo.png" height={{ sm: "48px" }} />
+            <Img src="/assets/logo.png" height={{ xs: "58px", sm: "48px" }} />
           </a>
           <Flex display={{ xs: "none", sm: "flex" }} align="center">
             <Link href="/">

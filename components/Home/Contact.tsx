@@ -102,7 +102,7 @@ const Contact: React.FC = () => {
           <Reveal
             display="flex"
             alignItems="center"
-            direction={{ xs: "column", md: "row" }}
+            flexDirection={{ xs: "column", md: "row" }}
             justifyContent="center"
           >
             <Flex
