@@ -171,7 +171,7 @@ const HeroSection: React.FC = () => {
                       <Text>Shreysi Swaraj</Text>
                       <Text>Shreyansh Sharma</Text>
                       <Text>Aditya Sharma</Text>
-                      <Text>Soumya Jain</Text>{" "}
+                      <Text>Soumya Jain</Text>
                     </SimpleGrid>
                   </Td>
                 </Tr>
