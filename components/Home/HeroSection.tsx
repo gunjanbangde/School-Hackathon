@@ -68,7 +68,7 @@ const HeroSection: React.FC = () => {
               <Box>
                 <Text
                   as="h1"
-                  fontSize={{ xs: "2xl", lg: "3xl" }}
+                  fontSize={{ xs: "2xl", lg: "1.8rem" }}
                   fontWeight="700"
                   textAlign={{ xs: "center", lg: "left" }}
                   color="primary"
@@ -87,7 +87,7 @@ const HeroSection: React.FC = () => {
                 >
                   Innovative STEM Model Competition – 2021
                   <br />
-                  <Text as="span" fontSize={{ xs: "2xl", lg: "3xl" }}>
+                  <Text as="span" fontSize={{ xs: "2xl", lg: "1.8rem" }}>
                     Version 1.0
                   </Text>
                 </Text>
@@ -110,7 +110,7 @@ const HeroSection: React.FC = () => {
               delay={0.4}
               mt="3rem"
             >
-              <a href="https://bit.ly/LNCT-Hackathon" target="_blank">
+              <a href="https://bit.ly/SCHOOL-STEM-MODEL" target="_blank">
                 <Button
                   borderRadius="3px"
                   bg="primary"

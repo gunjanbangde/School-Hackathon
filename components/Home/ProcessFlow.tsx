@@ -246,7 +246,7 @@ const ProcessFlow: React.FC = () => {
             delay={0.4}
             mt="3rem"
           >
-            <a href="https://bit.ly/LNCT-Hackathon" target="_blank">
+            <a href="https://bit.ly/SCHOOL-STEM-MODEL" target="_blank">
               <Button
                 borderRadius="3px"
                 bg="primary"

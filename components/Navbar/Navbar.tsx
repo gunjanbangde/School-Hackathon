@@ -110,7 +110,7 @@ const Navbar: React.FC = () => {
                 About Us
               </Button>
             </a>
-            <a href="https://bit.ly/LNCT-Hackathon" target="_blank">
+            <a href="https://bit.ly/SCHOOL-STEM-MODEL" target="_blank">
               <Button
                 borderRadius="3px"
                 height="44px"
@@ -205,7 +205,7 @@ const Navbar: React.FC = () => {
                     About Us
                   </Button>
                 </a>
-                <a href="https://bit.ly/LNCT-Hackathon" target="_blank">
+                <a href="https://bit.ly/SCHOOL-STEM-MODEL" target="_blank">
                   <Button
                     borderRadius="3px"
                     height="44px"

@@ -29,7 +29,7 @@ const OurPartners: React.FC = () => {
                 mr={{ sm: "2rem" }}
                 color="white"
                 as="h1"
-                mt="-2rem"
+                mt="-3rem"
                 fontSize={{ xs: "2xl", lg: "3xl" }}
                 fontWeight="700"
               >
@@ -74,14 +74,14 @@ const OurPartners: React.FC = () => {
             <Text
               color="white"
               fontWeight="700"
-              fontSize={{ xs: "4xl", md: "5xl" }}
+              fontSize={{ xs: "2xl", lg: "3xl" }}
               mb="1rem"
             >
               ABOUT LNCT GROUP
             </Text>
             <Text
               textAlign="justify"
-              fontSize={{ xs: "1xl", md: "1.4rem" }}
+              fontSize={{ xs: "1xl", md: "1.2rem" }}
               color="white"
               mb="3rem"
             >
