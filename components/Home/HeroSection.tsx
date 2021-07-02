@@ -90,7 +90,7 @@ const HeroSection: React.FC = () => {
                   lineHeight="1.2"
                   mb={{ xs: "1rem", lg: "3rem" }}
                 >
-                  National Level Virtual Hackathon - 2021
+                  Innovative STEM Model Competition – 2021
                   <br /> Version 1.0
                 </Text>
                 <Text
@@ -98,10 +98,11 @@ const HeroSection: React.FC = () => {
                   color="#14213d"
                   mb="1rem"
                 >
-                  Hackathon Club is going to start a new initiative to provide
-                  student’s platform to solve some of the pressing problem
-                  statements related to real life under an event “National Level
-                  Virtual Hackathon – 2021 Version 1.0”
+                  LNCT Group Hackathon Club along with LNCT World School is
+                  going to start a new initiative to provide School student’s
+                  platform to solve some of the pressing problem related to real
+                  life under an event “Innovative STEM Model Competition – 2021
+                  Version 1.0”
                 </Text>
               </Box>
             </Reveal>

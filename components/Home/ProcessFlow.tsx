@@ -54,139 +54,6 @@ const ProcessFlow: React.FC = () => {
                         flex="1"
                         textAlign="left"
                       >
-                        Round 1
-                      </Box>
-                      <Text fontSize="2xl" color="white">
-                        {isExpanded ? (
-                          <MdKeyboardArrowUp />
-                        ) : (
-                          <MdKeyboardArrowDown />
-                        )}
-                      </Text>
-                    </AccordionButton>
-                    <AccordionPanel pb={4}>
-                      <UnorderedList fontSize="2xl">
-                        <ListItem>Team Registration</ListItem>
-                        <ListItem>Choose a problem Statement</ListItem>
-                        <ListItem>
-                          Create a presentation that explains your idea in and
-                          out, thoroughly
-                        </ListItem>
-                        <ListItem>
-                          Submit your presentation along with other details, on
-                          the given link
-                        </ListItem>
-                        <ListItem>Present your PPT</ListItem>
-                        <ListItem>
-                          Selection on the basis of the Idea and Presentation
-                        </ListItem>
-                      </UnorderedList>
-                    </AccordionPanel>
-                  </>
-                )}
-              </AccordionItem>
-            </Reveal>
-            <Reveal>
-              <AccordionItem border="none" outline="none" width="100%">
-                {({ isExpanded }) => (
-                  <>
-                    <AccordionButton
-                      border="solid 1px"
-                      borderColor="gray.100"
-                      borderRadius="4px"
-                      bg="primary"
-                      _hover={{ bg: "primary" }}
-                    >
-                      <Box
-                        fontSize="3xl"
-                        color="white"
-                        flex="1"
-                        textAlign="left"
-                      >
-                        Round 2
-                      </Box>
-                      <Text fontSize="2xl" color="white">
-                        {isExpanded ? (
-                          <MdKeyboardArrowUp />
-                        ) : (
-                          <MdKeyboardArrowDown />
-                        )}
-                      </Text>
-                    </AccordionButton>
-                    <AccordionPanel pb={4}>
-                      <UnorderedList fontSize="2xl">
-                        <ListItem>
-                          Selected teams Register for Round 2 and Start making
-                          Prototype
-                        </ListItem>
-                        <ListItem>Prototype Presentation</ListItem>
-                        <ListItem>Further Team Selection</ListItem>
-                      </UnorderedList>
-                    </AccordionPanel>
-                  </>
-                )}
-              </AccordionItem>
-            </Reveal>
-            <Reveal>
-              <AccordionItem border="none" outline="none" width="100%">
-                {({ isExpanded }) => (
-                  <>
-                    <AccordionButton
-                      border="solid 1px"
-                      borderColor="gray.100"
-                      borderRadius="4px"
-                      bg="primary"
-                      _hover={{ bg: "primary" }}
-                    >
-                      <Box
-                        fontSize="3xl"
-                        color="white"
-                        flex="1"
-                        textAlign="left"
-                      >
-                        Round 3
-                      </Box>
-                      <Text fontSize="2xl" color="white">
-                        {isExpanded ? (
-                          <MdKeyboardArrowUp />
-                        ) : (
-                          <MdKeyboardArrowDown />
-                        )}
-                      </Text>
-                    </AccordionButton>
-                    <AccordionPanel pb={4}>
-                      <UnorderedList fontSize="2xl">
-                        <ListItem>
-                          Selected teams Register for Final Round
-                        </ListItem>
-                        <ListItem>
-                          Showcase your innovation and its implementation in the
-                          final round
-                        </ListItem>
-                        <ListItem>Grand Finale, we get the Winner</ListItem>
-                      </UnorderedList>
-                    </AccordionPanel>
-                  </>
-                )}
-              </AccordionItem>
-            </Reveal>
-            <Reveal>
-              <AccordionItem border="none" outline="none" width="100%">
-                {({ isExpanded }) => (
-                  <>
-                    <AccordionButton
-                      border="solid 1px"
-                      borderColor="gray.100"
-                      borderRadius="4px"
-                      bg="primary"
-                      _hover={{ bg: "primary" }}
-                    >
-                      <Box
-                        fontSize="3xl"
-                        color="white"
-                        flex="1"
-                        textAlign="left"
-                      >
                         General Guidelines for Participation
                       </Box>
                       <Text fontSize="2xl" color="white">
@@ -200,48 +67,24 @@ const ProcessFlow: React.FC = () => {
                     <AccordionPanel pb={4}>
                       <UnorderedList fontSize="2xl">
                         <ListItem>
-                          Each team would comprise a maximum of{" "}
-                          <strong>four students</strong>.
+                          Each team would comprise 2 - 4 students.
                         </ListItem>
                         <ListItem>
                           One of the students from each team should act as a
-                          <strong>Team Leader</strong>.
+                          Team Leader.
                         </ListItem>
                         <ListItem>
-                          <strong>Inter-disciplinary </strong>representation in
-                          the team is permitted. All team members should be from
-                          the same college;
-                          <strong> no inter-college teams </strong>are allowed.
-                          However, members from different branches of the same
-                          college/ institute can form a team.
-                        </ListItem>
-                        <ListItem>
-                          College photo ID is mandatory for participating in the
+                          School photo ID is mandatory for participating in the
                           finale.
                         </ListItem>
+                        <ListItem>One team can submit ONLY one idea.</ListItem>
                         <ListItem>
-                          One team can submit <strong>only one</strong> idea.
-                        </ListItem>
-                        <ListItem>
-                          Team members <strong>cannot</strong> be associated
-                          with multiple teams in parallel
+                          Team members CANNOT be associated with multiple teams
+                          in parallel.
                         </ListItem>
                         <ListItem>
                           Team Name should be unique and not contain the name of
-                          their institute in any form.
-                        </ListItem>
-                        <ListItem>
-                          Intellectual property (IP) of the idea would belong to
-                          the college/institute and the team members jointly.
-                          However, team members will make their product
-                          available for free while they are working.
-                        </ListItem>
-                        <ListItem>
-                          Evaluation criteria will include novelty of the idea,
-                          complexity, clarity and details in the idea document,
-                          feasibility, practicability, sustainability, scale of
-                          impact, user experience and potential for future work
-                          progression.
+                          their school in any form.
                         </ListItem>
                       </UnorderedList>
                     </AccordionPanel>
@@ -279,9 +122,8 @@ const ProcessFlow: React.FC = () => {
                     <AccordionPanel pb={4}>
                       <UnorderedList fontSize="2xl">
                         <ListItem>First Prize : Rs 20,000/-</ListItem>
-                        <ListItem>Second Prize : Rs 10,000/-</ListItem>
-                        <ListItem>Third Prize : Rs 5000/-</ListItem>
-                        <ListItem>Five Consolation Prize : 2000/-</ListItem>
+                        <ListItem>Second Prize : Rs 15,000/-</ListItem>
+                        <ListItem>Third Prize : Rs 10,000/-</ListItem>
                       </UnorderedList>
                     </AccordionPanel>
                   </>
@@ -318,23 +160,19 @@ const ProcessFlow: React.FC = () => {
                     <AccordionPanel pb={4}>
                       <UnorderedList fontSize="2xl">
                         <ListItem>
-                          Idea Submission Deadline: June 15, 2021
+                          Idea Submission Deadline: July 17, 2021
                         </ListItem>
                         <ListItem>
-                          Shortlist for Idea Submission: June 18, 2021
+                          Shortlist for Idea Submission: July 20, 2021
                         </ListItem>
                         <ListItem>
-                          Second Round Idea Presentation: June 20 &21, 2021
+                          Second Round Idea Presentation: July 22 &23, 2021
                         </ListItem>
                         <ListItem>
-                          Shortlist for Prototype Demonstration: June 22, 2021
+                          Shortlist for Prototype Demonstration: July 25, 2021
                         </ListItem>
                         <ListItem>
-                          Final Round Prototype Demonstration: June 28 & 29,
-                          2021
-                        </ListItem>
-                        <ListItem>
-                          Declaration of Result: June 30, 2021
+                          Final Round Prototype Demonstration: August 7, 2021
                         </ListItem>
                       </UnorderedList>
                     </AccordionPanel>

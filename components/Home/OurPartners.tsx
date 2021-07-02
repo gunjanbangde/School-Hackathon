@@ -68,7 +68,7 @@ const OurPartners: React.FC = () => {
               groups in central India. Founded in 1994 Lakshmi Narain College of
               Technology, Bhopal has the privilege of being the First Private
               (self-financed) institute of M.P. LNCT Group offers program from
-              Diploma, Bachelor, Master's and Doctorate level programs with
+              Diploma, Bachelor, Master's and Doctorate­ level programs with
               campuses in five locations in Madhya Pradesh & Chhattisgarh
               including the cities of Bhopal, Indore, Gwalior, Jabalpur and
               Bilaspur. LNCT Group of College to meet the ever increasing
