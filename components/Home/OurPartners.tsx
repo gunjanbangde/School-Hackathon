@@ -9,7 +9,7 @@ const OurPartners: React.FC = () => {
     <Box
       width="100%"
       py={{ xs: "60px", lg: "120px" }}
-      bg="linear-gradient(180deg,#261063 0%,#9B437BFA 100%)"
+      bg="linear-gradient(180deg,#6454f0  0%,#6ee2f5 100%)"
     >
       <Container maxWidth="1440px" px={{ xs: "20px", lg: "80px" }}>
         <Flex

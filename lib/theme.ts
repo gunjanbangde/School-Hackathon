@@ -10,7 +10,7 @@ const breakpoints = createBreakpoints({
 });
 
 const colors = {
-  primary: "#390099",
+  primary: "#4800C2",
   primaryLight: "#6835DA",
   background: "#F7F6FB",
   borderGray: "#CFCFCF",
