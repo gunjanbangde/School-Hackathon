@@ -56,7 +56,7 @@ const ProcessFlow: React.FC = () => {
                         flex="1"
                         textAlign="left"
                       >
-                        Who Can Participate
+                        Who Can Participate ?
                       </Box>
                       <Text fontSize="2xl" color="white">
                         {isExpanded ? (
@@ -162,6 +162,9 @@ const ProcessFlow: React.FC = () => {
                       </Text>
                     </AccordionButton>
                     <AccordionPanel pb={4}>
+                      <Text fontSize="2xl">
+                        The cash prize will be given to each category
+                      </Text>
                       <UnorderedList fontSize="2xl">
                         <ListItem>First Prize : Rs 20,000/-</ListItem>
                         <ListItem>Second Prize : Rs 15,000/-</ListItem>

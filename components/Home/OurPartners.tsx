@@ -29,14 +29,15 @@ const OurPartners: React.FC = () => {
                 mr={{ sm: "2rem" }}
                 color="white"
                 as="h1"
-                fontSize={{ xs: "3xl", lg: "4xl" }}
+                mt="-2rem"
+                fontSize={{ xs: "2xl", lg: "3xl" }}
                 fontWeight="700"
               >
                 About Innovative STEM Model Competition – 2021 Version 1.0
               </Text>
               <Text
                 textAlign="justify"
-                fontSize={{ xs: "1xl", md: "1.3rem" }}
+                fontSize={{ xs: "1xl", md: "1.2rem" }}
                 color="white"
                 mr={{ sm: "2rem" }}
               >

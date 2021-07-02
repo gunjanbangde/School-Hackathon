@@ -78,7 +78,7 @@ const HeroSection: React.FC = () => {
                 </Text>
                 <Text
                   as="h1"
-                  fontSize={{ xs: "4xl", lg: "5xl" }}
+                  fontSize={{ xs: "3xl", lg: "4xl" }}
                   fontWeight="700"
                   textAlign={{ xs: "center", lg: "left" }}
                   color="primary"
@@ -86,7 +86,10 @@ const HeroSection: React.FC = () => {
                   mb={{ xs: "1rem", lg: "3rem" }}
                 >
                   Innovative STEM Model Competition – 2021
-                  <br /> Version 1.0
+                  <br />
+                  <Text as="span" fontSize={{ xs: "2xl", lg: "3xl" }}>
+                    Version 1.0
+                  </Text>
                 </Text>
                 <Text
                   textAlign={{ xs: "center", lg: "left" }}

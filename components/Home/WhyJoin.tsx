@@ -78,7 +78,7 @@ const WhyJoin: React.FC = () => {
                 lineHeight="48px"
                 mb={{ xs: "3rem", md: "0", lg: "0" }}
               >
-                Why Join Hackathon?
+                Why Join ?
               </Text>
               <Lottie options={lottieOptions} height="100%" width="auto" />
             </Reveal>
@@ -98,7 +98,7 @@ const WhyJoin: React.FC = () => {
                 >
                   Innovative Solutions
                 </Text>
-                <Text color="gray.400" mb="1rem">
+                <Text color="white" mb="1rem">
                   Build innovative solutions for problems. Be a part of Nation
                   Building Opportunity.
                 </Text>
@@ -116,7 +116,7 @@ const WhyJoin: React.FC = () => {
                 >
                   Innovation Movement
                 </Text>
-                <Text color="gray.400" mb="1rem">
+                <Text color="white" mb="1rem">
                   Be part of World’s biggest Open Innovation Movement
                   Opportunity to work with some of the best talents.
                 </Text>
@@ -134,7 +134,7 @@ const WhyJoin: React.FC = () => {
                 >
                   Out-Of-The-Box Solutions
                 </Text>
-                <Text color="gray.400" mb="1rem">
+                <Text color="white" mb="1rem">
                   Talented youngsters from all over the country offer
                   out-of-the-box solutions to your problems
                 </Text>
@@ -152,7 +152,7 @@ const WhyJoin: React.FC = () => {
                 >
                   Recognition And Visibility
                 </Text>
-                <Text color="gray.400" mb="1rem">
+                <Text color="white" mb="1rem">
                   Nationally Recognition and visibility for your company across
                   all premier institutions in India
                 </Text>
