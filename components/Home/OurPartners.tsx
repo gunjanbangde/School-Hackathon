@@ -29,7 +29,7 @@ const OurPartners: React.FC = () => {
                 mr={{ sm: "2rem" }}
                 color="white"
                 as="h1"
-                mt="-3rem"
+                mt={{ xs: "1rem", md: "-3rem" }}
                 fontSize={{ xs: "2xl", lg: "3xl" }}
                 fontWeight="700"
               >
