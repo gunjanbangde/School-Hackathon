@@ -242,17 +242,6 @@ const ProcessFlow: React.FC = () => {
               Phone Number: +91-755-6185300
             </Text>
           </Reveal>
-          <Reveal>
-            <SimpleGrid
-              mt="2rem"
-              width="100%"
-              columns={{ xs: 1, lg: 2 }}
-              spacing={{ xs: "1rem", lg: "14rem" }}
-            >
-              <Img maxH="100%" src="/assets/poster1.jpeg" />
-              <Img maxH="100%" src="/assets/poster2.jpeg" />
-            </SimpleGrid>
-          </Reveal>
           <Reveal
             d="flex"
             justifyContent={{ xs: "center", md: "flex-start" }}
