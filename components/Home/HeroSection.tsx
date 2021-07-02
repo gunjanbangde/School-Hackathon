@@ -18,7 +18,7 @@ const HeroSection: React.FC = () => {
       alignItems="center"
       height={{ lg: "100vh" }}
       width="100%"
-      p={{ xs: "80px 0 60px", sm: "140px 0 130px" }}
+      p={{ xs: "40px 0 60px", sm: "140px 0 130px" }}
     >
       <Container maxWidth="1440px" px={{ xs: "20px", lg: "80px" }}>
         <Flex
@@ -128,6 +128,7 @@ const HeroSection: React.FC = () => {
             delay={0.4}
             height={{ xs: "40%", sm: "auto" }}
             width={{ lg: "52%" }}
+            mb={{ xs: "1rem", md: "0" }}
           >
             <Carousel />
           </Reveal>

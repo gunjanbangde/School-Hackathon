@@ -240,7 +240,12 @@ const ProcessFlow: React.FC = () => {
             </Text>
           </Reveal>
           <Reveal>
-            <SimpleGrid mt="2rem" width="100%" columns={2} spacing="14rem">
+            <SimpleGrid
+              mt="2rem"
+              width="100%"
+              columns={{ xs: 1, lg: 2 }}
+              spacing={{ xs: "1rem", lg: "14rem" }}
+            >
               <Img maxH="100%" src="/assets/poster1.jpeg" />
               <Img maxH="100%" src="/assets/poster2.jpeg" />
             </SimpleGrid>

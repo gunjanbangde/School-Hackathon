@@ -23,7 +23,7 @@ const OurPartners: React.FC = () => {
             mb="2rem"
             display="flex"
           >
-            <Box width="50%">
+            <Box width={{ md: "50%" }}>
               <Text
                 mb={{ xs: "2rem", sm: "0" }}
                 mr={{ sm: "2rem" }}
