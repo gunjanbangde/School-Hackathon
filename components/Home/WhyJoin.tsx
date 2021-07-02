@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import {
   Box,
   Flex,
@@ -13,7 +13,7 @@ import { GiGears } from "react-icons/gi";
 import { IoEarthSharp } from "react-icons/io5";
 import Lottie from "react-lottie";
 
-import Reveal, { MotionBox } from "../library/Reveal";
+import Reveal from "../library/Reveal";
 import animationData from "@/public/assets/why_lottie.json";
 import ThemeCarousel from "./Carousel";
 
@@ -26,39 +26,6 @@ const WhyJoin: React.FC = () => {
       preserveAspectRatio: "xMidYMid slice",
     },
   };
-
-  const [index, setIndex] = useState(0);
-  const [themeData, setThemeData] = useState([""]);
-
-  useEffect(() => {
-    setThemeData(data[index]);
-  }, [index]);
-
-  const data = [
-    [
-      "Irrigation",
-      "Water conservation",
-      "IOT applications in agriculture and rural development",
-      "Water purifiers for purifying the flowing water in the lakes",
-      "Low cost equipment to use in agricultural applications",
-    ],
-    [
-      "Virtual Assistant for Medical Device",
-      "Primary health care in remote areas using Cloud medicine and Diagnostic Services",
-      "Early prediction of lifestyle diseases",
-      "Fabrication of mask with low cost materials",
-    ],
-    [
-      "Food processing",
-      "Security & surveillance",
-      "Drone for spraying fertilizers",
-      "Smart communication devices to use in rural areas",
-      "Smart Vehicle",
-    ],
-    ["Solar energy", "Wind energy", "Biomass energy"],
-    ["Waste collection", "Waste transportation", "Waste disposal"],
-    ["Open"],
-  ];
 
   return (
     <Box
@@ -177,25 +144,21 @@ const WhyJoin: React.FC = () => {
           pl={{ md: "2rem" }}
         >
           <Reveal width={{ xs: "100%", md: "45%" }}>
-            <MotionBox
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              key={index}
-              minHeight="200px"
-            >
-              <UnorderedList color="white" fontSize="2xl">
-                {themeData.map((data, i) => (
-                  <ListItem key={i}>{data}</ListItem>
-                ))}
-              </UnorderedList>
-            </MotionBox>
+            <UnorderedList color="white" fontSize="2xl">
+              <ListItem>Agriculture</ListItem>
+              <ListItem>Public Transportation or Public Safety</ListItem>
+              <ListItem>Home Automation & Application</ListItem>
+              <ListItem>Renewable Energy</ListItem>
+              <ListItem>Waste Management</ListItem>
+              <ListItem>Open Innovation</ListItem>
+            </UnorderedList>
           </Reveal>
           <Reveal
             right
             mb={{ xs: "2rem", md: "0" }}
             width={{ xs: "100%", md: "55%" }}
           >
-            <ThemeCarousel index={index} setIndex={setIndex} />
+            <ThemeCarousel />
           </Reveal>
         </Flex>
       </Container>

@@ -5,11 +5,10 @@ import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Flex, Img, Box, Text } from "@chakra-ui/react";
 
 type Props = {
-  setIndex: React.Dispatch<React.SetStateAction<number>>;
-  index: number;
+  //
 };
 
-const ThemeCarousel: React.FC<Props> = ({ setIndex, index }) => {
+const ThemeCarousel: React.FC<Props> = () => {
   const carouselData = [
     {
       text: "Agriculture",
@@ -44,8 +43,6 @@ const ThemeCarousel: React.FC<Props> = ({ setIndex, index }) => {
         showStatus={false}
         showThumbs={false}
         infiniteLoop={true}
-        onChange={(props) => setIndex(props)}
-        selectedItem={index}
         showArrows={true}
       >
         {carouselData.map((item) => (

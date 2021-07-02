@@ -11,8 +11,6 @@ import {
   ListItem,
   UnorderedList,
   Button,
-  Img,
-  SimpleGrid,
 } from "@chakra-ui/react";
 import { MdKeyboardArrowDown, MdKeyboardArrowUp } from "react-icons/md";
 
