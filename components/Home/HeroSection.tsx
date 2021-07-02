@@ -8,20 +8,11 @@ import {
   SimpleGrid,
   Img,
 } from "@chakra-ui/react";
-import Lottie from "react-lottie";
 
-import animationData from "@/public/assets/hero_lottie.json";
 import Reveal from "../library/Reveal";
+import Carousel from "./HeroCarousel";
 
 const HeroSection: React.FC = () => {
-  const lottieOptions = {
-    loop: true,
-    autoplay: true,
-    animationData,
-    rendererSettings: {
-      preserveAspectRatio: "xMidYMid slice",
-    },
-  };
   return (
     <Flex
       alignItems="center"
@@ -31,6 +22,7 @@ const HeroSection: React.FC = () => {
     >
       <Container maxWidth="1440px" px={{ xs: "20px", lg: "80px" }}>
         <Flex
+          justify="space-between"
           alignItems="center"
           flexDirection={{ xs: "column-reverse", lg: "row" }}
         >
@@ -43,8 +35,8 @@ const HeroSection: React.FC = () => {
               <SimpleGrid
                 mt="1rem"
                 mb="2rem"
-                width={{ xs: "90%", md: "70%", lg: "140%" }}
-                columns={{ xs: 2, sm: 6 }}
+                width={{ xs: "90%", md: "70%", lg: "150%" }}
+                columns={{ xs: 2, sm: 7 }}
                 spacing={{ xs: 10, lg: 5 }}
               >
                 <Reveal>
@@ -65,6 +57,9 @@ const HeroSection: React.FC = () => {
                     width="100%"
                     src="/assets/Hackathon Club Logo.png"
                   />
+                </Reveal>
+                <Reveal>
+                  <Img my="auto" width="100%" src="/assets/gallery/11.jpg" />
                 </Reveal>
                 <Reveal>
                   <Img my="auto" width="100%" src="/assets/IIC.png" />
@@ -132,9 +127,9 @@ const HeroSection: React.FC = () => {
             right
             delay={0.4}
             height={{ xs: "40%", sm: "auto" }}
-            width={{ lg: "58%" }}
+            width={{ lg: "52%" }}
           >
-            <Lottie options={lottieOptions} height="100%" width="100%" />
+            <Carousel />
           </Reveal>
         </Flex>
       </Container>

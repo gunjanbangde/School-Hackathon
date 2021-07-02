@@ -11,6 +11,8 @@ import {
   ListItem,
   UnorderedList,
   Button,
+  Img,
+  SimpleGrid,
 } from "@chakra-ui/react";
 import { MdKeyboardArrowDown, MdKeyboardArrowUp } from "react-icons/md";
 
@@ -37,6 +39,46 @@ const ProcessFlow: React.FC = () => {
             </Text>
           </Reveal>
           <Accordion defaultIndex={[0]} width="100%">
+            <Reveal>
+              <AccordionItem border="none" outline="none" width="100%">
+                {({ isExpanded }) => (
+                  <>
+                    <AccordionButton
+                      border="solid 1px"
+                      borderColor="gray.100"
+                      borderRadius="4px"
+                      bg="primary"
+                      _hover={{ bg: "primary" }}
+                    >
+                      <Box
+                        fontSize="3xl"
+                        color="white"
+                        flex="1"
+                        textAlign="left"
+                      >
+                        Who Can Participate
+                      </Box>
+                      <Text fontSize="2xl" color="white">
+                        {isExpanded ? (
+                          <MdKeyboardArrowUp />
+                        ) : (
+                          <MdKeyboardArrowDown />
+                        )}
+                      </Text>
+                    </AccordionButton>
+                    <AccordionPanel pb={4}>
+                      <Text fontSize="2xl">
+                        School students can participate under two category:
+                      </Text>
+                      <UnorderedList fontSize="2xl">
+                        <ListItem>Category I: Class 9 & Class 10</ListItem>
+                        <ListItem>Category II: Class 11 & Class 12</ListItem>
+                      </UnorderedList>
+                    </AccordionPanel>
+                  </>
+                )}
+              </AccordionItem>
+            </Reveal>
             <Reveal>
               <AccordionItem border="none" outline="none" width="100%">
                 {({ isExpanded }) => (
@@ -196,6 +238,12 @@ const ProcessFlow: React.FC = () => {
               <br /> Mobile Number: 9826856015, 7354549227 <br />
               Phone Number: +91-755-6185300
             </Text>
+          </Reveal>
+          <Reveal>
+            <SimpleGrid mt="2rem" width="100%" columns={2} spacing="14rem">
+              <Img maxH="100%" src="/assets/poster1.jpeg" />
+              <Img maxH="100%" src="/assets/poster2.jpeg" />
+            </SimpleGrid>
           </Reveal>
           <Reveal
             d="flex"

@@ -12,19 +12,19 @@ type Props = {
 const ThemeCarousel: React.FC<Props> = ({ setIndex, index }) => {
   const carouselData = [
     {
-      text: "Agricultural and Rural Development",
+      text: "Agricultural",
       icon: "agriculture",
     },
     {
-      text: "Healthcare and Bio-Medical Devices",
-      icon: "healthcare",
+      text: "Public Transportation OR Public Safety",
+      icon: "transportation",
     },
     {
-      text: "Smart Systems",
+      text: "Home Automation & Application",
       icon: "smart_system",
     },
     {
-      text: "Renewable Energy Sources for Rural Development",
+      text: "Renewable Energy",
       icon: "renewable",
     },
     {

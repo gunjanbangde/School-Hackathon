@@ -23,6 +23,39 @@ const OurPartners: React.FC = () => {
             mb="2rem"
             display="flex"
           >
+            <Box width="50%">
+              <Text
+                mb={{ xs: "2rem", sm: "0" }}
+                mr={{ sm: "2rem" }}
+                color="white"
+                as="h1"
+                fontSize={{ xs: "3xl", lg: "4xl" }}
+                fontWeight="700"
+              >
+                About Innovative STEM Model Competition – 2021 Version 1.0
+              </Text>
+              <Text
+                textAlign="justify"
+                fontSize={{ xs: "1xl", md: "1.3rem" }}
+                color="white"
+                mr={{ sm: "2rem" }}
+              >
+                STEM competitions allow for school’s student teams (from class 9
+                to class 12) to solve a specific challenge or problem through
+                science, technology, engineering, or mathematics. Many of these
+                challenges are rooted in real-world issues, encouraging
+                participants to use creativity and critical thinking in order to
+                come up with innovative solutions. STEM competitions provide
+                much-needed structure to those who are just looking to get
+                started in science, technology, engineering, and math, while
+                also acting as a skill-building opportunity for those further
+                along in coding, game development, robotics, and much more.
+                Benefits of STEM competitions include opportunities for students
+                to think critically and work autonomously in some instances, or
+                in others, to work together in teams, strengthening
+                collaborative and social skills.
+              </Text>
+            </Box>
             <Box
               width={{ xs: "345px", sm: "633px" }}
               maxWidth="100%"
@@ -35,19 +68,6 @@ const OurPartners: React.FC = () => {
                 url="/assets/Hackathon Intro for Website.mp4"
               />
             </Box>
-            <Text
-              mb={{ xs: "2rem", sm: "0" }}
-              ml={{ sm: "2rem" }}
-              color="white"
-              as="h1"
-              fontSize={{ xs: "4xl", lg: "5xl" }}
-              fontWeight="700"
-            >
-              About Virtual
-              <br /> Hackathon - 2021
-              <br />
-              Version 1.0
-            </Text>
           </Reveal>
           <Reveal>
             <Text
@@ -60,7 +80,7 @@ const OurPartners: React.FC = () => {
             </Text>
             <Text
               textAlign="justify"
-              fontSize={{ xs: "1xl", md: "2xl" }}
+              fontSize={{ xs: "1xl", md: "1.4rem" }}
               color="white"
               mb="3rem"
             >
