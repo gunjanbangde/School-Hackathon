@@ -14,12 +14,12 @@ const Layout: React.FC = ({ children }: Props) => (
       <title>STEM Model Competition</title>
       <meta
         name="description"
-        content="National Level Virtual Hackathon organized by LNCT Group of Colleges"
+        content="STEM Model Competition organized by LNCT Group of Colleges"
       />
       <meta property="og:title" content="LNCT Hackathon" />
       <meta
         property="og:description"
-        content="National Level Virtual Hackathon organized by LNCT Group of Colleges"
+        content="STEM Model Competition organized by LNCT Group of Colleges"
       />
       <meta
         property="og:image"
