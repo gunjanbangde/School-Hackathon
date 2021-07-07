@@ -66,7 +66,8 @@ const OurPartners: React.FC = () => {
                 width="100%"
                 height="100%"
                 controls
-                url="/assets/Hackathon Intro for Website.mp4"
+                light={true}
+                url="https://www.youtube.com/watch?v=CtNDtUeVqd8"
               />
             </Box>
           </Reveal>
