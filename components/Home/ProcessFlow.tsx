@@ -69,8 +69,9 @@ const ProcessFlow: React.FC = () => {
                         School students can participate under two category:
                       </Text>
                       <UnorderedList fontSize="2xl">
-                        <ListItem>Category I: Class 9 & Class 10</ListItem>
-                        <ListItem>Category II: Class 11 & Class 12</ListItem>
+                        <ListItem>Category I: Class 6th, 7th & 8th</ListItem>
+                        <ListItem>Category II: Class 9 & Class 10</ListItem>
+                        <ListItem>Category III: Class 11 & Class 12</ListItem>
                       </UnorderedList>
                     </AccordionPanel>
                   </>
