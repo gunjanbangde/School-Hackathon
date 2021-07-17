@@ -25,7 +25,7 @@ const ProcessFlow: React.FC = () => {
           justifyContent="center"
           flexDirection="column"
         >
-          <Reveal>
+          <Reveal display="flex" flexDirection="column" alignItems="center">
             <Text
               color="primary"
               fontWeight="700"
@@ -34,6 +34,15 @@ const ProcessFlow: React.FC = () => {
               mb="3rem"
             >
               Process Flow
+            </Text>
+            <Text
+              color="primary"
+              fontWeight="700"
+              fontSize="4xl"
+              mb="3rem"
+              lineHeight="48px"
+            >
+              No Registration Fees
             </Text>
           </Reveal>
           <Accordion defaultIndex={[0]} width="100%">
@@ -204,19 +213,19 @@ const ProcessFlow: React.FC = () => {
                     <AccordionPanel pb={4}>
                       <UnorderedList fontSize="2xl">
                         <ListItem>
-                          Idea Submission Deadline: July 17, 2021
+                          Idea Submission Deadline: July 30, 2021
                         </ListItem>
                         <ListItem>
-                          Shortlist for Idea Submission: July 20, 2021
+                          Shortlist for Idea Submission: August 3, 2021
                         </ListItem>
                         <ListItem>
-                          Second Round Idea Presentation: July 22 &23, 2021
+                          Second Round Idea Presentation: August 5 & 6, 2021
                         </ListItem>
                         <ListItem>
-                          Shortlist for Prototype Demonstration: July 25, 2021
+                          Shortlist for Prototype Demonstration: August 10, 2021
                         </ListItem>
                         <ListItem>
-                          Final Round Prototype Demonstration: August 7, 2021
+                          Final Round Prototype Demonstration: August 20, 2021
                         </ListItem>
                       </UnorderedList>
                     </AccordionPanel>
@@ -225,6 +234,10 @@ const ProcessFlow: React.FC = () => {
               </AccordionItem>
             </Reveal>
           </Accordion>
+          <Text mt="2rem" color="primary" fontSize="xl">
+            Important Note : The competition will be either in offline or online
+            mode depends on the prevailing COVID-19 situation.
+          </Text>
           <Reveal mt="2rem" width="100%">
             <Text
               fontWeight="700"

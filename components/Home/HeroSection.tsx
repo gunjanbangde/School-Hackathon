@@ -85,7 +85,7 @@ const HeroSection: React.FC = () => {
                   lineHeight="1.2"
                   mb={{ xs: "1rem", lg: "3rem" }}
                 >
-                  Innovative STEM Model Competition – 2021
+                  National Innovative STEM Model Competition – 2021
                   <br />
                   <Text as="span" fontSize={{ xs: "2xl", lg: "1.8rem" }}>
                     Version 1.0
