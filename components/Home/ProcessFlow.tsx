@@ -18,7 +18,7 @@ import Reveal from "../library/Reveal";
 
 const ProcessFlow: React.FC = () => {
   return (
-    <Box width="100%" py="120px">
+    <Box id="results" width="100%" py="120px">
       <Container maxWidth="1440px" px={{ xs: "20px", lg: "80px" }}>
         <Flex
           alignItems="center"
@@ -226,6 +226,106 @@ const ProcessFlow: React.FC = () => {
                         </ListItem>
                         <ListItem>
                           Final Round Prototype Demonstration: August 20, 2021
+                        </ListItem>
+                      </UnorderedList>
+                    </AccordionPanel>
+                  </>
+                )}
+              </AccordionItem>
+            </Reveal>
+            <Reveal>
+              <AccordionItem border="none" outline="none" width="100%">
+                {({ isExpanded }) => (
+                  <>
+                    <AccordionButton
+                      border="solid 1px"
+                      borderColor="gray.100"
+                      borderRadius="4px"
+                      bg="primary"
+                      _hover={{ bg: "primary" }}
+                    >
+                      <Box
+                        fontSize="3xl"
+                        color="white"
+                        flex="1"
+                        textAlign="left"
+                      >
+                        Results
+                      </Box>
+                      <Text fontSize="2xl" color="white">
+                        {isExpanded ? (
+                          <MdKeyboardArrowUp />
+                        ) : (
+                          <MdKeyboardArrowDown />
+                        )}
+                      </Text>
+                    </AccordionButton>
+                    <AccordionPanel pb={4}>
+                      <Text fontSize="2xl">
+                        We are happy to announce that your innovation idea has
+                        been selected for Idea Presentation round (Second) in
+                        National Innovative STEM Model Competition – 2021
+                        Version 1.0. The presentation will be held category wise
+                        on 5, 6 & 7 August 2021 through Zoom Meeting. The time
+                        schedule & date will be informed you by WhatsApp group.
+                      </Text>
+                      <UnorderedList mt="0.5rem" fontSize="2xl">
+                        <ListItem>
+                          <Flex
+                            mb="1rem"
+                            alignItems="center"
+                            maxW="600px"
+                            justifyContent="space-between"
+                          >
+                            Category 1{" "}
+                            <a
+                              target="_blank"
+                              href="/assets/Result for Category 1.pdf"
+                            >
+                              {" "}
+                              <Button bg="primary" color="white">
+                                View
+                              </Button>
+                            </a>
+                          </Flex>
+                        </ListItem>
+                        <ListItem>
+                          <Flex
+                            mb="1rem"
+                            alignItems="center"
+                            maxW="600px"
+                            justifyContent="space-between"
+                          >
+                            Category 2{" "}
+                            <a
+                              target="_blank"
+                              href="/assets/Result for Category 2.pdf"
+                            >
+                              {" "}
+                              <Button bg="primary" color="white">
+                                View
+                              </Button>
+                            </a>
+                          </Flex>
+                        </ListItem>
+                        <ListItem>
+                          <Flex
+                            mb="1rem"
+                            alignItems="center"
+                            maxW="600px"
+                            justifyContent="space-between"
+                          >
+                            Category 3{" "}
+                            <a
+                              target="_blank"
+                              href="/assets/Result for Category 3.pdf"
+                            >
+                              {" "}
+                              <Button bg="primary" color="white">
+                                View
+                              </Button>
+                            </a>
+                          </Flex>
                         </ListItem>
                       </UnorderedList>
                     </AccordionPanel>
