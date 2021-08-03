@@ -48,7 +48,7 @@ const HeroSection: React.FC = () => {
               color="white"
               mr={3}
               onClick={() => {
-                router.push("#results");
+                router.push("/results");
                 onClose();
               }}
             >
