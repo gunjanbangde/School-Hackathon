@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 import {
   Box,
   Flex,
@@ -7,28 +7,12 @@ import {
   Button,
   SimpleGrid,
   Img,
-  Modal,
-  ModalOverlay,
-  ModalContent,
-  ModalHeader,
-  ModalFooter,
-  ModalBody,
-  useDisclosure,
-  ModalCloseButton,
 } from "@chakra-ui/react";
-import { useRouter } from "next/router";
 
 import Reveal from "../library/Reveal";
 import Carousel from "./HeroCarousel";
 
 const HeroSection: React.FC = () => {
-  const { isOpen, onOpen, onClose } = useDisclosure();
-  const router = useRouter();
-
-  useEffect(() => {
-    onOpen();
-  }, []);
-
   return (
     <Flex
       alignItems="center"
@@ -36,37 +20,6 @@ const HeroSection: React.FC = () => {
       width="100%"
       p={{ xs: "40px 0 60px", sm: "140px 0 130px" }}
     >
-      <Modal isCentered isOpen={isOpen} onClose={onClose}>
-        <ModalOverlay />
-        <ModalContent>
-          <ModalHeader>Results are Out!</ModalHeader>
-          <ModalCloseButton />
-          <ModalBody></ModalBody>
-          <ModalFooter>
-            <Button
-              bg="primary"
-              color="white"
-              mr={3}
-              onClick={() => {
-                router.push("/results");
-                onClose();
-              }}
-            >
-              View Results
-            </Button>
-            <Button
-              bg="primary"
-              color="white"
-              mr={3}
-              onClick={() => {
-                onClose;
-              }}
-            >
-              Close
-            </Button>
-          </ModalFooter>
-        </ModalContent>
-      </Modal>
       <Container maxWidth="1440px" px={{ xs: "20px", lg: "80px" }}>
         <Flex
           justify="space-between"

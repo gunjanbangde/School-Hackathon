@@ -93,27 +93,6 @@ const Navbar: React.FC = () => {
                 </Text>
               </a>
             </Link>
-            <Link href="/results">
-              <a>
-                <Text
-                  mr="1rem"
-                  borderRadius="3px"
-                  mt="0.5rem"
-                  sx={{
-                    textDecoration: page.includes("results")
-                      ? "underline"
-                      : "none",
-                  }}
-                  textUnderlineOffset="4px"
-                  height="44px"
-                  fontSize="2xl"
-                  p="0 25px"
-                  color="primary"
-                >
-                  Results
-                </Text>
-              </a>
-            </Link>
             <a href="https://lnct.ac.in/" target="_blank">
               <Button
                 mr="1rem"
@@ -204,25 +183,6 @@ const Navbar: React.FC = () => {
                       color="primary"
                     >
                       Contributors
-                    </Text>
-                  </a>
-                </Link>
-                <Link href="/results">
-                  <a>
-                    <Text
-                      borderRadius="3px"
-                      sx={{
-                        textDecoration: page.includes("results")
-                          ? "underline"
-                          : "none",
-                      }}
-                      textUnderlineOffset="4px"
-                      mt="0.5rem"
-                      height="44px"
-                      fontSize="2xl"
-                      color="primary"
-                    >
-                      Results
                     </Text>
                   </a>
                 </Link>

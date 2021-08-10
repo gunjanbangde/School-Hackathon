@@ -250,7 +250,7 @@ const ProcessFlow: React.FC = () => {
                         flex="1"
                         textAlign="left"
                       >
-                        Results
+                        Shortlisted teams for Idea Presentation (Second Round)
                       </Box>
                       <Text fontSize="2xl" color="white">
                         {isExpanded ? (
@@ -320,6 +320,100 @@ const ProcessFlow: React.FC = () => {
                               target="_blank"
                               href="/assets/Result for Category 3.pdf"
                             >
+                              {" "}
+                              <Button bg="primary" color="white">
+                                View
+                              </Button>
+                            </a>
+                          </Flex>
+                        </ListItem>
+                      </UnorderedList>
+                    </AccordionPanel>
+                  </>
+                )}
+              </AccordionItem>
+            </Reveal>
+            <Reveal>
+              <AccordionItem border="none" outline="none" width="100%">
+                {({ isExpanded }) => (
+                  <>
+                    <AccordionButton
+                      border="solid 1px"
+                      borderColor="gray.100"
+                      borderRadius="4px"
+                      bg="primary"
+                      _hover={{ bg: "primary" }}
+                    >
+                      <Box
+                        fontSize="3xl"
+                        color="white"
+                        flex="1"
+                        textAlign="left"
+                      >
+                        Shortlisted teams for Grand Finale (Third Round)
+                      </Box>
+                      <Text fontSize="2xl" color="white">
+                        {isExpanded ? (
+                          <MdKeyboardArrowUp />
+                        ) : (
+                          <MdKeyboardArrowDown />
+                        )}
+                      </Text>
+                    </AccordionButton>
+                    <AccordionPanel pb={4}>
+                      <Text fontSize="2xl">
+                        We are happy to announce that your innovation idea has
+                        been selected for Grand Finale (Prototype
+                        Demonstration/Working Model) in National Innovative STEM
+                        Model Competition – 2021 Version 1.0.
+                      </Text>
+                      <Text fontSize="xl">
+                        Note: You have to submit your Project Demonstration
+                        Video (for 5 minutes) up to August 20, 2021. The video
+                        will be uploading through Google form which will be sent
+                        you earliest.
+                      </Text>
+                      <UnorderedList mt="0.5rem" fontSize="2xl">
+                        <ListItem>
+                          <Flex
+                            mb="1rem"
+                            alignItems="center"
+                            maxW="600px"
+                            justifyContent="space-between"
+                          >
+                            Category 1{" "}
+                            <a target="_blank" href="/assets/final-1.jpeg">
+                              <Button bg="primary" color="white">
+                                View
+                              </Button>
+                            </a>
+                          </Flex>
+                        </ListItem>
+                        <ListItem>
+                          <Flex
+                            mb="1rem"
+                            alignItems="center"
+                            maxW="600px"
+                            justifyContent="space-between"
+                          >
+                            Category 2{" "}
+                            <a target="_blank" href="/assets/final-2.jpeg">
+                              {" "}
+                              <Button bg="primary" color="white">
+                                View
+                              </Button>
+                            </a>
+                          </Flex>
+                        </ListItem>
+                        <ListItem>
+                          <Flex
+                            mb="1rem"
+                            alignItems="center"
+                            maxW="600px"
+                            justifyContent="space-between"
+                          >
+                            Category 3{" "}
+                            <a target="_blank" href="/assets/final-3.jpeg">
                               {" "}
                               <Button bg="primary" color="white">
                                 View

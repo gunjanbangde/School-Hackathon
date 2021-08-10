@@ -40,3 +40,24 @@ button {
 .carousel.carousel-slider .control-arrow:hover {
   background: none !important;
 }
+
+/* Scrollbar CSS */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f8f8f8;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #bbb;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #aaa;
+}
